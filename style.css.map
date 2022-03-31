@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEAA,AAAA,CAAC,CAAA;EACG,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB",
     "sources": [
-        "style.scss"
+        "style.scss",
+        "Asset/modules/_color.scss",
+        "Asset/modules/_reset.scss"
     ],
     "names": [],
     "file": "style.css"
