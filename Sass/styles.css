@@ -1,0 +1,93 @@
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.SignUpContainer form {
+  background-color: white;
+  padding: 50px;
+}
+
+.SignUpContainer h2 {
+  text-transform: uppercase;
+  color: #028C32;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.SignUpContainer ::-webkit-input-placeholder {
+  color: #9ad1ad;
+}
+
+.SignUpContainer :-ms-input-placeholder {
+  color: #9ad1ad;
+}
+
+.SignUpContainer ::-ms-input-placeholder {
+  color: #9ad1ad;
+}
+
+.SignUpContainer ::placeholder {
+  color: #9ad1ad;
+}
+
+.SignUpContainer input {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.SignUpContainer input:focus {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.SignUpContainer .misc ::-webkit-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+.SignUpContainer .misc :-ms-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+.SignUpContainer .misc ::-ms-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+.SignUpContainer .misc ::placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+.SignUpContainer .d-flex select {
+  border-radius: 8px 0 0 8px;
+  background-color: #028C32;
+  padding: 12px 0px;
+}
+
+.SignUpContainer .d-flex input {
+  border-radius: 0 8px 8px 0;
+}
+
+.SignUpContainer button {
+  border: none;
+  border-radius: 8px;
+  background-color: #028C32;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.SignUpContainer #validationCustom05 {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=styles.css.map */
