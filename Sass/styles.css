@@ -2,77 +2,88 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
-.SignUpContainer form {
+body .misc ::-webkit-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+body .misc :-ms-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+body .misc ::-ms-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+body .misc ::placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+body button {
+  border: none;
+  border-radius: 8px;
+  background-color: #028C32;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+body .SignUpContainer form {
   background-color: white;
   padding: 50px;
 }
 
-.SignUpContainer h2 {
+body .SignUpContainer h2 {
   text-transform: uppercase;
   color: #028C32;
   text-align: center;
   font-family: "Inter", sans-serif;
 }
 
-.SignUpContainer ::-webkit-input-placeholder {
+body .SignUpContainer ::-webkit-input-placeholder {
   color: #9ad1ad;
 }
 
-.SignUpContainer :-ms-input-placeholder {
+body .SignUpContainer :-ms-input-placeholder {
   color: #9ad1ad;
 }
 
-.SignUpContainer ::-ms-input-placeholder {
+body .SignUpContainer ::-ms-input-placeholder {
   color: #9ad1ad;
 }
 
-.SignUpContainer ::placeholder {
+body .SignUpContainer ::placeholder {
   color: #9ad1ad;
 }
 
-.SignUpContainer input {
+body .SignUpContainer input {
   border: 1px solid rgba(2, 140, 50, 0.6);
   padding: 10px;
   border-radius: 8px;
 }
 
-.SignUpContainer input:focus {
+body .SignUpContainer input:focus {
   border: 1px solid rgba(2, 140, 50, 0.6);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.SignUpContainer .misc ::-webkit-input-placeholder {
-  opacity: 0.3;
-  font-size: 8px;
-}
-
-.SignUpContainer .misc :-ms-input-placeholder {
-  opacity: 0.3;
-  font-size: 8px;
-}
-
-.SignUpContainer .misc ::-ms-input-placeholder {
-  opacity: 0.3;
-  font-size: 8px;
-}
-
-.SignUpContainer .misc ::placeholder {
-  opacity: 0.3;
-  font-size: 8px;
-}
-
-.SignUpContainer .d-flex select {
+body .SignUpContainer .d-flex select {
   border-radius: 8px 0 0 8px;
   background-color: #028C32;
   padding: 12px 0px;
 }
 
-.SignUpContainer .d-flex input {
+body .SignUpContainer .d-flex input {
   border-radius: 0 8px 8px 0;
 }
 
-.SignUpContainer button {
+body .SignUpContainer button {
   border: none;
   border-radius: 8px;
   background-color: #028C32;
@@ -83,10 +94,112 @@ body {
   margin-bottom: 20px;
 }
 
-.SignUpContainer #validationCustom05 {
+body .SignUpContainer #validationCustom05 {
   border: 1px solid rgba(2, 140, 50, 0.6);
   padding: 10px;
   border-radius: 8px;
+  margin-top: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .LoginContainer form {
+  background-color: white;
+  padding: 50px;
+}
+
+body .LoginContainer ::-webkit-input-placeholder {
+  color: #9ad1ad;
+}
+
+body .LoginContainer :-ms-input-placeholder {
+  color: #9ad1ad;
+}
+
+body .LoginContainer ::-ms-input-placeholder {
+  color: #9ad1ad;
+}
+
+body .LoginContainer ::placeholder {
+  color: #9ad1ad;
+}
+
+body .LoginContainer h2 {
+  color: #028C32;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+body .LoginContainer input {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+body .LoginContainer input:focus {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .SellWasteContainer input {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+body .SellWasteContainer input:focus {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .SellWasteContainer button {
+  margin-top: 60px;
+}
+
+body .SellWasteContainer form {
+  background-color: white;
+  padding: 50px;
+}
+
+body .SellWasteContainer ::-webkit-input-placeholder {
+  color: #9ad1ad;
+}
+
+body .SellWasteContainer :-ms-input-placeholder {
+  color: #9ad1ad;
+}
+
+body .SellWasteContainer ::-ms-input-placeholder {
+  color: #9ad1ad;
+}
+
+body .SellWasteContainer ::placeholder {
+  color: #9ad1ad;
+}
+
+body .SellWasteContainer h2 {
+  color: #028C32;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+body .SellWasteContainer .d-flex select {
+  border-radius: 8px 0 0 8px;
+  background-color: #028C32;
+  padding: 12px 0px;
+}
+
+body .SellWasteContainer .d-flex input {
+  border-radius: 0 8px 8px 0;
+}
+
+body .SellWasteContainer #validationCustom05 {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
 }

@@ -4,8 +4,28 @@
 //   margin: 0;
 // }
 body {
+   
   font-family: $formfont;
-}
+   .misc {
+    ::placeholder {
+      opacity: 0.3;
+      font-size: 8px;
+    }
+  }
+    button {
+    border: none;
+    border-radius: 8px;
+    background-color: $mainColor;
+    color: white;
+    width: 100%;
+
+    padding: 10px 0;
+    margin: {
+      top: 100px;
+      bottom: 20px;
+    }
+  } 
+
 .SignUpContainer {
   form {
     background-color: white;
@@ -19,7 +39,7 @@ body {
   }
 
   ::placeholder {
-    color: #9ad1ad;
+    color: $placeholdercolor
   }
 
   input {
@@ -31,12 +51,7 @@ body {
     border: 1px solid $formColor;
     box-shadow: none;
   }
-  .misc {
-    ::placeholder {
-      opacity: 0.3;
-      font-size: 8px;
-    }
-  }
+ 
 
   .d-flex {
     select {
@@ -67,7 +82,107 @@ body {
     border: 1px solid $formColor;
     padding: 10px;
     border-radius: 8px;
+    margin-top: 0;
 
     box-shadow: none;
+   
   }
+ 
+}
+
+
+
+.LoginContainer{
+     form {
+    background-color: white;
+    padding: 50px;
+  }
+   ::placeholder {
+    color: $placeholdercolor
+  }
+   
+
+ h2 {
+   
+    color: $mainColor;
+    text-align: center;
+    font-family: $myfont;
+  }
+   input {
+    border: 1px solid $formColor;
+    padding: 10px;
+    border-radius: 8px;
+
+  }
+  input:focus {
+    border: 1px solid $formColor;
+    box-shadow: none;
+  }
+   
+
+
+
+
+}
+
+
+.SellWasteContainer{
+     input {
+    border: 1px solid $formColor;
+    padding: 10px;
+    border-radius: 8px;
+
+  }
+   input:focus {
+    border: 1px solid $formColor;
+    box-shadow: none;
+  }
+  button{
+      margin-top: 60px;
+  }
+   form {
+    background-color: white;
+    padding: 50px;
+  }
+   ::placeholder {
+    color: $placeholdercolor
+  }
+   h2 {
+   
+    color: $mainColor;
+    text-align: center;
+    font-family: $myfont;
+  }
+  .d-flex {
+    select {
+      border-radius: 8px 0 0 8px;
+      background-color: $mainColor;
+
+      padding: 12px 0px;
+    }
+    input {
+      border-radius: 0 8px 8px 0;
+    }
+  }
+   #validationCustom05 {
+    border: 1px solid $formColor;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 0;
+  
+
+
+    box-shadow: none;
+   
+  }
+
+
+}
+
+
+
+
+
+
+
 }
