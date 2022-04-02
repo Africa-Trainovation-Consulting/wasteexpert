@@ -203,4 +203,50 @@ body .SellWasteContainer #validationCustom05 {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+body .ForgotPasswordContainer .text {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+body .ForgotPasswordContainer .text h2 {
+  color: #028C32;
+}
+
+body .ForgotPasswordContainer ::-webkit-input-placeholder {
+  color: #9ad1ad;
+}
+
+body .ForgotPasswordContainer :-ms-input-placeholder {
+  color: #9ad1ad;
+}
+
+body .ForgotPasswordContainer ::-ms-input-placeholder {
+  color: #9ad1ad;
+}
+
+body .ForgotPasswordContainer ::placeholder {
+  color: #9ad1ad;
+}
+
+body .ForgotPasswordContainer form {
+  background-color: white;
+  padding: 50px;
+}
+
+body .ForgotPasswordContainer input {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+body .ForgotPasswordContainer input:focus {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .ForgotPasswordContainer button {
+  margin-top: 250px;
+}
 /*# sourceMappingURL=styles.css.map */

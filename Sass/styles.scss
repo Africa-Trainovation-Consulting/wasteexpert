@@ -4,64 +4,11 @@
 //   margin: 0;
 // }
 body {
-   
   font-family: $formfont;
-   .misc {
+  .misc {
     ::placeholder {
       opacity: 0.3;
       font-size: 8px;
-    }
-  }
-    button {
-    border: none;
-    border-radius: 8px;
-    background-color: $mainColor;
-    color: white;
-    width: 100%;
-
-    padding: 10px 0;
-    margin: {
-      top: 100px;
-      bottom: 20px;
-    }
-  } 
-
-.SignUpContainer {
-  form {
-    background-color: white;
-    padding: 50px;
-  }
-  h2 {
-    text-transform: uppercase;
-    color: $mainColor;
-    text-align: center;
-    font-family: $myfont;
-  }
-
-  ::placeholder {
-    color: $placeholdercolor
-  }
-
-  input {
-    border: 1px solid $formColor;
-    padding: 10px;
-    border-radius: 8px;
-  }
-  input:focus {
-    border: 1px solid $formColor;
-    box-shadow: none;
-  }
- 
-
-  .d-flex {
-    select {
-      border-radius: 8px 0 0 8px;
-      background-color: $mainColor;
-
-      padding: 12px 0px;
-    }
-    input {
-      border-radius: 0 8px 8px 0;
     }
   }
   button {
@@ -73,116 +20,170 @@ body {
 
     padding: 10px 0;
     margin: {
-      top: 50px;
+      top: 100px;
       bottom: 20px;
     }
   }
 
-  #validationCustom05 {
-    border: 1px solid $formColor;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 0;
+  .SignUpContainer {
+    form {
+      background-color: white;
+      padding: 50px;
+    }
+    h2 {
+      text-transform: uppercase;
+      color: $mainColor;
+      text-align: center;
+      font-family: $myfont;
+    }
 
-    box-shadow: none;
-   
-  }
- 
-}
+    ::placeholder {
+      color: $placeholdercolor;
+    }
 
+    input {
+      border: 1px solid $formColor;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    input:focus {
+      border: 1px solid $formColor;
+      box-shadow: none;
+    }
 
+    .d-flex {
+      select {
+        border-radius: 8px 0 0 8px;
+        background-color: $mainColor;
 
-.LoginContainer{
-     form {
-    background-color: white;
-    padding: 50px;
-  }
-   ::placeholder {
-    color: $placeholdercolor
-  }
-   
-
- h2 {
-   
-    color: $mainColor;
-    text-align: center;
-    font-family: $myfont;
-  }
-   input {
-    border: 1px solid $formColor;
-    padding: 10px;
-    border-radius: 8px;
-
-  }
-  input:focus {
-    border: 1px solid $formColor;
-    box-shadow: none;
-  }
-   
-
-
-
-
-}
-
-
-.SellWasteContainer{
-     input {
-    border: 1px solid $formColor;
-    padding: 10px;
-    border-radius: 8px;
-
-  }
-   input:focus {
-    border: 1px solid $formColor;
-    box-shadow: none;
-  }
-  button{
-      margin-top: 60px;
-  }
-   form {
-    background-color: white;
-    padding: 50px;
-  }
-   ::placeholder {
-    color: $placeholdercolor
-  }
-   h2 {
-   
-    color: $mainColor;
-    text-align: center;
-    font-family: $myfont;
-  }
-  .d-flex {
-    select {
-      border-radius: 8px 0 0 8px;
+        padding: 12px 0px;
+      }
+      input {
+        border-radius: 0 8px 8px 0;
+      }
+    }
+    button {
+      border: none;
+      border-radius: 8px;
       background-color: $mainColor;
+      color: white;
+      width: 100%;
 
-      padding: 12px 0px;
+      padding: 10px 0;
+      margin: {
+        top: 50px;
+        bottom: 20px;
+      }
+    }
+
+    #validationCustom05 {
+      border: 1px solid $formColor;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 0;
+
+      box-shadow: none;
+    }
+  }
+
+  .LoginContainer {
+    form {
+      background-color: white;
+      padding: 50px;
+    }
+    ::placeholder {
+      color: $placeholdercolor;
+    }
+
+    h2 {
+      color: $mainColor;
+      text-align: center;
+      font-family: $myfont;
     }
     input {
-      border-radius: 0 8px 8px 0;
+      border: 1px solid $formColor;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    input:focus {
+      border: 1px solid $formColor;
+      box-shadow: none;
     }
   }
-   #validationCustom05 {
-    border: 1px solid $formColor;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 0;
-  
 
+  .SellWasteContainer {
+    input {
+      border: 1px solid $formColor;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    input:focus {
+      border: 1px solid $formColor;
+      box-shadow: none;
+    }
+    button {
+      margin-top: 60px;
+    }
+    form {
+      background-color: white;
+      padding: 50px;
+    }
+    ::placeholder {
+      color: $placeholdercolor;
+    }
+    h2 {
+      color: $mainColor;
+      text-align: center;
+      font-family: $myfont;
+    }
+    .d-flex {
+      select {
+        border-radius: 8px 0 0 8px;
+        background-color: $mainColor;
 
-    box-shadow: none;
-   
+        padding: 12px 0px;
+      }
+      input {
+        border-radius: 0 8px 8px 0;
+      }
+    }
+    #validationCustom05 {
+      border: 1px solid $formColor;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 0;
+
+      box-shadow: none;
+    }
   }
 
+  .ForgotPasswordContainer {
+    .text {
+      font-family: $myfont;
+      text-align: center;
+      h2 {
+        color: $mainColor;
+      }
+    }
+     ::placeholder {
+      color: $placeholdercolor;
+    }
+    form {
+      background-color: white;
+      padding: 50px;
+    }
 
-}
-
-
-
-
-
-
-
+    input {
+      border: 1px solid $formColor;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    input:focus {
+      border: 1px solid $formColor;
+      box-shadow: none;
+    }
+    button {
+      margin-top: 250px;
+    }
+  }
 }
