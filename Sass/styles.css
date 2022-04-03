@@ -33,11 +33,6 @@ body button {
   margin-bottom: 20px;
 }
 
-body .SignUpContainer form {
-  background-color: white;
-  padding: 50px;
-}
-
 body .SignUpContainer h2 {
   text-transform: uppercase;
   color: #028C32;
@@ -122,6 +117,10 @@ body .LoginContainer ::-ms-input-placeholder {
 
 body .LoginContainer ::placeholder {
   color: #9ad1ad;
+}
+
+body .LoginContainer button {
+  margin-top: 100px;
 }
 
 body .LoginContainer h2 {
@@ -248,5 +247,132 @@ body .ForgotPasswordContainer input:focus {
 
 body .ForgotPasswordContainer button {
   margin-top: 250px;
+}
+
+body .ResetContainer .text {
+  text-align: center;
+}
+
+body .ResetContainer .text h2 {
+  color: #028C32;
+}
+
+body .ResetContainer input {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+body .ResetContainer input:focus {
+  border: 1px solid rgba(2, 140, 50, 0.6);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .ResetContainer ::-webkit-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+body .ResetContainer :-ms-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+body .ResetContainer ::-ms-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+body .ResetContainer ::placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+body .ResetContainer button {
+  margin-top: 200px;
+}
+
+body .ResetContainer form {
+  background-color: white;
+  padding: 50px;
+}
+
+body .central {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .central p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+body .central h2 {
+  color: #028C32;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+}
+
+body .centralize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .centralize .congratulations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+body .centralize .congratulations img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 35%;
+}
+
+body .centralize .congratulations h2 {
+  font-size: 25px;
+  color: #028C32;
+  font-family: "Inter", sans-serif;
+}
+
+body .centralize .congratulations p {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
 }
 /*# sourceMappingURL=styles.css.map */

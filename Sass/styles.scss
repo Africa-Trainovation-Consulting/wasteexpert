@@ -26,10 +26,8 @@ body {
   }
 
   .SignUpContainer {
-    form {
-      background-color: white;
-      padding: 50px;
-    }
+   
+    
     h2 {
       text-transform: uppercase;
       color: $mainColor;
@@ -93,6 +91,9 @@ body {
     }
     ::placeholder {
       color: $placeholdercolor;
+    }
+    button{
+        margin-top: 100px;
     }
 
     h2 {
@@ -186,4 +187,113 @@ body {
       margin-top: 250px;
     }
   }
+
+
+  .ResetContainer{
+      .text{
+          text-align: center;
+          h2{
+               color: $mainColor; 
+          }
+      }
+         input {
+      border: 1px solid $formColor;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    input:focus {
+      border: 1px solid $formColor;
+      box-shadow: none;
+    }
+     ::placeholder {
+      opacity: 0.3;
+      font-size: 8px;
+    }
+    button{
+        margin-top: 200px;
+    }
+      form {
+      background-color: white;
+      padding: 50px;
+    }
+
+
+
+
+
+
+  }
+
+.central{
+     display: flex; 
+    justify-content: center; 
+    
+     padding: 20px;
+     width: fit-content; 
+     margin: auto;
+     align-items: center;
+    
+
+
+  p{
+      font-weight: 400;
+font-size: 16px;
+font-family: $myfont;
+  }
+      
+       
+    h2 {
+   
+        color: $mainColor;
+        text-align: center;
+        font-family: $myfont;
+        font-size: 25px;
+      }
+    
+     
+  
+    }
+
+
+  .centralize{
+    display: flex; 
+    justify-content: center; 
+    
+     padding: 20px;
+     width: fit-content; 
+     margin: auto;
+     align-items: center;
+
+
+
+
+     .congratulations{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        img{
+            align-self: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 35%;
+        }
+   
+   h2{
+   
+       font-size: 25px;
+        color: $mainColor;
+         
+         font-family: $myfont;
+   }
+   p{
+   font-family: $formfont;
+       font-size: 16px;
+   }
+   
+     }
+}
+
+
+
+
 }
