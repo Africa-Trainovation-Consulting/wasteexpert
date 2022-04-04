@@ -455,4 +455,32 @@ body {
         padding-top: 40px;
     }
   }
+  .secondSection{
+      text-align: center;
+      border-bottom: 40px solid $mainColor;
+      h2{
+          font-size: 39px;
+          font-family: $formfont;
+          padding: {
+              top: 30px;
+              bottom:30px;
+          }
+              @media screen and (max-width:$width){
+                  font-size: 28px;
+              }
+      }
+      p{
+          color: #676B69;
+          line-height: 25px;
+          font-family: $formfont;
+        //   font-size: 16px;
+        padding: {
+            top: 30px;
+            bottom: 30px;
+        }
+      }
+      .para{
+          padding-top: 45px;
+      }
+  }
 }

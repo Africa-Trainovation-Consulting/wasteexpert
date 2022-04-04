@@ -572,4 +572,34 @@ body .firstSection button a {
 body .firstSection img {
   padding-top: 40px;
 }
+
+body .secondSection {
+  text-align: center;
+  border-bottom: 40px solid #028C32;
+}
+
+body .secondSection h2 {
+  font-size: 39px;
+  font-family: "Mulish", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  body .secondSection h2 {
+    font-size: 28px;
+  }
+}
+
+body .secondSection p {
+  color: #676B69;
+  line-height: 25px;
+  font-family: "Mulish", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+body .secondSection .para {
+  padding-top: 45px;
+}
 /*# sourceMappingURL=styles.css.map */
