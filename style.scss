@@ -1,31 +1,48 @@
-@import "./Asset/modules/color" ;
-@import "./Asset/modules/reset" ;
-
-.navbar{
+@import "./Asset/modules/color";
+@import "./Asset/modules/reset";
+// Navigation Bar
+.navbar {
     background-color: $nav;
     box-shadow: $boxShadow;
-    .navbar-brand{
-        span{
+    .navbar-brand {
+        span {
             color: $color1;
             @media screen and(max-width: 910px) {
                 display: none;
             }
         }
     }
-    .navbar-toggler{
+    .navbar-toggler {
         border: none !important;
     }
-    .fa{
+    .fa {
         color: $fa;
     }
-  ul{
-      li{
-          a{
-              font-weight: 600;
-              color: $color1 !important;
-          }
-      }
-  }
+    ul {
+        li {
+            a {
+                font-weight: 600;
+                color: $color1 !important;
+                &:hover {
+                    background-color: $color1;
+                    color: $ptext2 !important;
+                }
+            }
+        }
+    }
+    .btn {
+        background-color: $color1;
+        color: $ptext2;
+        outline: none !important;
+        padding: 5px 30px 5px 30px;
+        &:focus {
+            box-shadow: none;
+        }
+        &:hover {
+            color: $color1;
+            background-color: $ptext1;
+        }
+    }
 }
 // nav {
 //     display: flex;
@@ -34,8 +51,7 @@
 //     font-weight: 600;
 //     padding: 2vw;
 //     box-shadow: $boxShadow;
-  
-    
+
 //     .wasteX {
 //         padding-top: 4vh;
 //         color: $color1;
@@ -44,7 +60,7 @@
 //         }
 //     }
 
-//     .navBar { 
+//     .navBar {
 //         display: flex;
 //         list-style: none;
 //         text-align: center;
@@ -54,8 +70,7 @@
 //             a{
 //                 color: $color1;
 //                 font-weight: 500;
-                
-                
+
 //             }
 //         }
 
@@ -118,105 +133,154 @@
 //         }
 //     }
 // }
-.aboutUs{
-    background-image: url(./Asset/img/aboutUsBg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: $color1;
-    background-position: center;
-    // height: 60vh;
+
+.AboutUs {
+    border-bottom: 40px solid $color1;
+    h2 {
+        color: $color1;
+        // &::after{
+        // content: "";
+        // border-right: 15px solid green;
+        // width: 100px;
+        // transform: translate(10px);
+    }
+p{
+    color: $color1;
+    text-align: justify;
+}
+    img {
+        background-image: url(./Asset/img/aboutUsBg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.WasteMenace{
+    background-color: $bg2;
     h2{
-        color: $ptext2;
-        padding-top: 10vh;
+        color: $color1;
     }
     p{
-        color: $ptext2;
-        // padding-bottom: 10vh;
-
+        color: $color1;
+        text-align: justify;
     }
-}
-.wasteMenace{
-    .wasteText{
-        // max-height: 30vh;
-        h2{
-            color: $color1;
-        }
-        p{
-            font-size: small;
-        }
-
-    }
+    
 }
 .OurSolution{
-    background-color: $color1;
-    .solutionText{
-        h2{
-            color: $ptext2;
-        }
-        p{
-            color: $ptext2;
-
-        }
+    h2{
+        color: $color1;
     }
-}
-.wasteRecycle{
-    background-color: $bg1;
-    .RecycleText{
-        p{
-            padding-top: 10vh;
-        }
+    p{
+        color: $color1;
+        text-align: justify;
     }
 }
 .advice{
-    // background-image: url(/Asset/img/aboutUSrecycle-bin.svg);
-    // background-repeat: no-repeat;
-    // transform: translate-y(20px);
-
-    // background-image: url(/Asset/img/aboutUSecology.svg);
-    .adviceText{
+    h3{
+        color: $color1;
         text-align: center;
-        h4{
-            padding-top: 10vh;
-            color: $color1;
-        }
-
-        p{
-            // text-align: center;
-            padding: 10vh;
-        }
+    }
+    p{
+        color: $ptext1;
+        text-align: center;
     }
 }
-footer{
+// .aboutUs {
+//     background-image: url(./Asset/img/aboutUsBg.svg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-color: $color1;
+//     background-position: center;
+//     // height: 60vh;
+//     h2 {
+//         color: $ptext2;
+//         padding-top: 10vh;
+//         }
+//     }
+//     p {
+//         color: $ptext2;
+//         // padding-bottom: 10vh;
+//     }
+// }
+// .wasteMenace {
+//     .wasteText {
+//         // max-height: 30vh;
+//         h2 {
+//             color: $color1;
+//         }
+//         p {
+//             font-size: small;
+//         }
+//     }
+// }
+// .OurSolution {
+//     background-color: $color1;
+//     .solutionText {
+//         h2 {
+//             color: $ptext2;
+//         }
+//         p {
+//             color: $ptext2;
+//         }
+//     }
+// }
+// .wasteRecycle {
+//     background-color: $bg1;
+//     .RecycleText {
+//         p {
+//             padding-top: 10vh;
+//         }
+//     }
+// }
+// .advice {
+// background-image: url(/Asset/img/aboutUSrecycle-bin.svg);
+// background-repeat: no-repeat;
+// transform: translate-y(20px);
+
+// background-image: url(/Asset/img/aboutUSecology.svg);
+.adviceText {
+    text-align: center;
+    h4 {
+        padding-top: 10vh;
+        color: $color1;
+    }
+
+    p {
+        // text-align: center;
+        padding: 10vh;
+    }
+}
+
+footer {
     background-color: $color1;
-    .newsletter{
+    .newsletter {
         justify-content: space-between;
         display: flex;
-        label{
+        label {
             color: $ptext2;
         }
-        button{
+        button {
             background-color: $btn;
             color: $ptext2;
         }
     }
- .ft{
-     .abt{
-         ul{
-             li{
-                list-style: none;
-                 a{
-                     text-decoration: none;
-                     color: $ptext2; 
-                     text-align: center;               
-                 }
-             }
-         }
-     }
-.contact{
-    @extend .abt
-}
-.services{
-    @extend .abt
-}
- }
+    .ft {
+        .abt {
+            ul {
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: $ptext2;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .contact {
+            @extend .abt;
+        }
+        .services {
+            @extend .abt;
+        }
+    }
 }

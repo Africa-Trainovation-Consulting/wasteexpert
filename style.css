@@ -34,61 +34,89 @@
   color: #028C32 !important;
 }
 
-.aboutUs {
+.navbar ul li a:hover {
+  background-color: #028C32;
+  color: #FFFFFF !important;
+}
+
+.navbar .btn {
+  background-color: #028C32;
+  color: #FFFFFF;
+  outline: none !important;
+  padding: 5px 30px 5px 30px;
+}
+
+.navbar .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .btn:hover {
+  color: #028C32;
+  background-color: #00000066;
+}
+
+.AboutUs {
+  border-bottom: 40px solid #028C32;
+}
+
+.AboutUs h2 {
+  color: #028C32;
+}
+
+.AboutUs p {
+  color: #028C32;
+  text-align: justify;
+}
+
+.AboutUs img {
   background-image: url(./Asset/img/aboutUsBg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #028C32;
-  background-position: center;
 }
 
-.aboutUs h2 {
-  color: #FFFFFF;
-  padding-top: 10vh;
+.WasteMenace {
+  background-color: #E5E5E5;
 }
 
-.aboutUs p {
-  color: #FFFFFF;
-}
-
-.wasteMenace .wasteText h2 {
+.WasteMenace h2 {
   color: #028C32;
 }
 
-.wasteMenace .wasteText p {
-  font-size: small;
+.WasteMenace p {
+  color: #028C32;
+  text-align: justify;
 }
 
-.OurSolution {
-  background-color: #028C32;
+.OurSolution h2 {
+  color: #028C32;
 }
 
-.OurSolution .solutionText h2 {
-  color: #FFFFFF;
+.OurSolution p {
+  color: #028C32;
+  text-align: justify;
 }
 
-.OurSolution .solutionText p {
-  color: #FFFFFF;
-}
-
-.wasteRecycle {
-  background-color: #EEEEEE;
-}
-
-.wasteRecycle .RecycleText p {
-  padding-top: 10vh;
-}
-
-.advice .adviceText {
+.advice h3 {
+  color: #028C32;
   text-align: center;
 }
 
-.advice .adviceText h4 {
+.advice p {
+  color: #00000066;
+  text-align: center;
+}
+
+.adviceText {
+  text-align: center;
+}
+
+.adviceText h4 {
   padding-top: 10vh;
   color: #028C32;
 }
 
-.advice .adviceText p {
+.adviceText p {
   padding: 10vh;
 }
 
