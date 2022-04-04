@@ -6,42 +6,245 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>WasteExpert</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light ">
-        <div class="container">
-            <a class="navbar-brand" href="#"> <img src="/Asset/img/LogoWX.svg" alt=""> Wastexpert</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="/Asset/img/LogoWX.svg" alt=""> <span>Wastexpert</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fa fa-bars" id="hamburger"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item px-3 ">
+                            <a class="nav-link " aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Waste to wealth pick up</a></li>
+                                <li><a class="dropdown-item" href="#">Waste to wealth Drop Point</a></li>
+                                <li><a class="dropdown-item" href="#">Corporate recycling</a></li>
+                                <li><a class="dropdown-item" href="#">Flip it</a></li>
+                                <li><a class="dropdown-item" href="#">Recce</a></li>
+                                <li><a class="dropdown-item" href="#">Post event cleaning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link " aria-current="page" href="#">Contact us</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <button type="button" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Login
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <nav id="navbar">
+            <div class="wasteX">
+                <img src="/Asset/img/LogoWX.svg" alt=""> <span>Wastexpert</span>
+            </div>
+
+            <ul class="navBar" id="nav">
+
+                <li> <a class="nav-link" href="#">About</a></li>
+                <li> <a class="nav-link" href="#">Services</a></li>
+                <li> <a class="nav-link" href="#">Contact us</a></li>
+                <li> <a class="nav-link" href="#">FAQ</a></li>
+                <!-- <li> <a class="nav-link" href="#">Services</a></li> -->
+        <!-- <button type="button" class="btn " id="btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                </button>
+            </ul>
+            <button type="button" class="btn btn1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <button class="btn btn-outline-success" type="submit">Login</button>
+            <div class="fa fa-bars" id="hamburger"></div>
+            <!-- <i id="ba" class="fa fa-bars"  width="200px" ></i> -->
+        <!-- </nav> -->
+    </header>
+    <!-- <section class="aboutUs">
+        <div class="container">
+            <div class="col pt-4">
+                <h2>About us</h2>
+                <p class="pb-4">Wastexpert is a waste recycling and social benefit venture borne out of sheer passion
+                    and
+                    vision to transform our environment into a zero landfill and zero waste nation. We operates
+                    an incentive-based scheme which collects recyclable materials from enerprie and households
+                    by giving them a chance to generate value from their waste and provide a reliable supply of
+                    raw material to the local recycling industry. And in turn rewards them with “Points” which
+                    they can accumulate overtime and cash out or use to redeem/shop for household items offered
+                    through our Wastexpert- store.</p>
             </div>
         </div>
-    </nav>
+    </section>
+    <section class="wasteMenace">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md pt-3 ">
+                    <img src="/Asset/img/about-us-wasteArea.svg" class="img-fluid" alt="">
+                </div>
 
+                <div class="col-md wasteText">
+                    <h2 class="pt-5">Waste Menace</h2>
+                    <p class="pt-4">It is a common sight to see our streets, drainages, roadsides and even dumpsites
+                        packed with
+                        recyclable packaging materials which are carelessly disposed of by users. This practice often
+                        poses
+                        environmental hazards to communities as they experience flood due to the blockage of water
+                        drainages
+                        by most of these recyclables which has become the fastest growing packaging option in the
+                        beverage
+                        and food industry. Lagos State (our pilot location) has an estimated population of 17 million
+                        people
+                        and daily generates an average of 9,000 metric tonnes of waste of which 1,200 metric tonnes are
+                        currently recycled. Recyclables form the bulk of identifiable items at refuse points in Nigeria.
+                        Often times, the drainage channels in the metropolis cities are blocked by these recyclable
+                        items
+                        and the resultant effect during the rainy season is flood and breeding ground for harmful
+                        organisms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="OurSolution pt-4">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md solutionText">
+                    <h2 class="pt-5">Our Solution</h2>
+                    <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis leo auctor a
+                        scelerisque vel sit cras eu consectetur. Viverra venenatis, mauris diam dolor cras a. Lectus
+                        massa aenean neque pulvinar tortor, a. Nisl, dictumst eu urna, at odio scelerisque pulvinar a,
+                        magna. Vulputate. sit amet, consectetur adipiscing elit. Mollis leo auctor a scelerisque vel sit
+                        cras eu consectetur. Viverra venenatis, mauris diam dolor cras a. Lectus massa aenean neque
+                        pulvinar tortor, a. Nisl, dictumst eu urna, at odio scelerisque pulvinar a, magna. Vulputate.
+                        consectetur adipiscing elit. Mollis leo auctor a scelerisque vel sit cras eu consectetur.
+                        Viverra venenatis, mauris diam dolor cras a. Lectus massa aenean neque pulvinar tortor, a. Nisl,
+                        dictumst eu urna, at odio scelerisque pulvinar a, magna.
+                    </p>
+                </div>
+                <div class="col-md pt-3 align-items-center">
+                    <img src="/Asset/img/About-Uswaste1.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wasteRecycle">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md pt-3 ">
+                    <img src="/Asset/img/AboutusBottleRCY.svg" class="img-fluid" alt="">
+                </div>
 
+                <div class="col-md RecycleText">
+                    <!-- <h2 class="pt-5">Waste Menace</h2> -->
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis leo auctor a
+                        scelerisque vel sit cras eu consectetur. Viverra venenatis, mauris diam dolor cras a. Lectus
+                        massa aenean neque pulvinar tortor, a. Nisl, dictumst eu urna, at odio scelerisque pulvinar a,
+                        magna. Vulputate. sit amet, consectetur adipiscing elit. Mollis leo auctor a scelerisque vel sit
+                        cras eu consectetur. Viverra venenatis, mauris diam dolor cras a. Lectus massa aenean neque
+                        pulvinar tortor, a. Nisl, dictumst eu urna, at odio scelerisque pulvinar a, magna. Vulputate.
+                        consectetur adipiscing elit. Mollis leo auctor a scelerisque vel sit cras eu consectetur.
+                        Viverra venenatis, mauris diam dolor cras a. Lectus massa aenean neque pulvinar tortor, a. Nisl,
+                        dictumst eu urna,
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advice">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-2 pt-5 md-d-none">
+                    <img src="/Asset/img/aboutUSrecycle-bin.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-8 adviceText">
+                    <h4> If you care about the environment and how it will affect mankind,
+                        then recycling shoudn’t take a second thought.</h4>
 
+                    <p> <b>Jeffery Sanderson</b>
+                    </p>
+                </div>
+                <div class="col-md-2 pt-5">
+                    <img src="/Asset/img/aboutUSecology.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="newsletter">
+                <div class="pt-5">
+                    <img src="/Asset/img/footerLogo.svg" class="img-fluid" alt="">
+                </div>
+                <div class="pt-5">
+                    <form action="">
+                        <label for="e-mail">Subscribe to our Newsletter</label> <br>
+                        <input type="email" name="" placeholder="Enter your email address here" id=""> <button
+                            type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row ft pt-5">
+                <div class="col-md-3">
+                    <p>Wastexpert is a waste recycling and social benefit venture borne out of sheer passion and vision
+                        to transform our environment into a zero landfill and zero waste nation. We operates an
+                        incentive-based scheme which collects recyclable materials from post consumers and in turn
+                        rewards them with “Points” which they can accumulate overtime and cash out or use to redeem/shop
+                        for household items offered through our Wastexpert store.</p>
+                </div>
+                <div class="col-md-3 abt">
+                    <ul>
+                        <li> <a href="">About</a></li> <br>
+                        <li> <a href="">Our Mission</a></li>
+                        <li><a href="">Vision</a></li>
+                        <li><a href="">Solutions</a></li>
+                        <li><a href="">Teams</a></li>
+                    </ul>
 
+                </div>
+                <div class="col-md-3 contact">
+                    <ul>
+                        <li> <a href="">Contact Us</a></li><br>
+                        <li> <a href="">Our Mission</a></li>
+                        <li> <a href="">Vision</a></li>
+                        <li> <a href="">Solutions</a></li>
+                        <li><a href="">Teams</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 services">
+                    <ul>
+                        <li> <a href=""> Service </a> </li> <br>
+                        <li> <a href=""> Waste to wealth pick up</a></li>
+                        <li> <a href=""> Flip-it</a></li>
+                        <li> <a href=""> Waste drop point</a></li>
+                        <li> <a href=""> Corporate Recycling</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> -->
 
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
