@@ -5,13 +5,17 @@
 // }
 body {
   font-family: $formfont;
+
   .misc {
     ::placeholder {
       opacity: 0.3;
       font-size: 8px;
     }
   }
-  button {
+
+
+  .SignUpContainer {
+        button {
     border: none;
     border-radius: 8px;
     background-color: $mainColor;
@@ -24,10 +28,6 @@ body {
       bottom: 20px;
     }
   }
-
-  .SignUpContainer {
-   
-    
     h2 {
       text-transform: uppercase;
       color: $mainColor;
@@ -85,6 +85,19 @@ body {
   }
 
   .LoginContainer {
+        button {
+    border: none;
+    border-radius: 8px;
+    background-color: $mainColor;
+    color: white;
+    width: 100%;
+
+    padding: 10px 0;
+    margin: {
+      top: 100px;
+      bottom: 20px;
+    }
+  }
     form {
       background-color: white;
       padding: 50px;
@@ -92,8 +105,8 @@ body {
     ::placeholder {
       color: $placeholdercolor;
     }
-    button{
-        margin-top: 100px;
+    button {
+      margin-top: 100px;
     }
 
     h2 {
@@ -113,6 +126,19 @@ body {
   }
 
   .SellWasteContainer {
+        button {
+    border: none;
+    border-radius: 8px;
+    background-color: $mainColor;
+    color: white;
+    width: 100%;
+
+    padding: 10px 0;
+    margin: {
+      top: 100px;
+      bottom: 20px;
+    }
+  }
     input {
       border: 1px solid $formColor;
       padding: 10px;
@@ -159,6 +185,19 @@ body {
   }
 
   .ForgotPasswordContainer {
+        button {
+    border: none;
+    border-radius: 8px;
+    background-color: $mainColor;
+    color: white;
+    width: 100%;
+
+    padding: 10px 0;
+    margin: {
+      top: 100px;
+      bottom: 20px;
+    }
+  }
     .text {
       font-family: $myfont;
       text-align: center;
@@ -166,7 +205,7 @@ body {
         color: $mainColor;
       }
     }
-     ::placeholder {
+    ::placeholder {
       color: $placeholdercolor;
     }
     form {
@@ -188,15 +227,27 @@ body {
     }
   }
 
+  .ResetContainer {
+        button {
+    border: none;
+    border-radius: 8px;
+    background-color: $mainColor;
+    color: white;
+    width: 100%;
 
-  .ResetContainer{
-      .text{
-          text-align: center;
-          h2{
-               color: $mainColor; 
-          }
+    padding: 10px 0;
+    margin: {
+      top: 100px;
+      bottom: 20px;
+    }
+  }
+    .text {
+      text-align: center;
+      h2 {
+        color: $mainColor;
       }
-         input {
+    }
+    input {
       border: 1px solid $formColor;
       padding: 10px;
       border-radius: 8px;
@@ -205,95 +256,183 @@ body {
       border: 1px solid $formColor;
       box-shadow: none;
     }
-     ::placeholder {
+    ::placeholder {
       opacity: 0.3;
       font-size: 8px;
     }
-    button{
-        margin-top: 200px;
+    button {
+      margin-top: 200px;
     }
-      form {
+    form {
       background-color: white;
       padding: 50px;
     }
-
-
-
-
-
-
   }
 
-.central{
-     display: flex; 
-    justify-content: center; 
-    
-     padding: 20px;
-     width: fit-content; 
-     margin: auto;
-     align-items: center;
-    
+  .central {
+    display: flex;
+    justify-content: center;
 
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+      button {
+    border: none;
+    border-radius: 8px;
+    background-color: $mainColor;
+    color: white;
+    width: 100%;
 
-  p{
+    padding: 10px 0;
+    margin: {
+      top: 100px;
+      bottom: 20px;
+    }
+  }
+
+    p {
       font-weight: 400;
-font-size: 16px;
-font-family: $myfont;
-  }
-      
-       
-    h2 {
-   
-        color: $mainColor;
-        text-align: center;
-        font-family: $myfont;
-        font-size: 25px;
-      }
-    
-     
-  
+      font-size: 16px;
+      font-family: $myfont;
     }
 
+    h2 {
+      color: $mainColor;
+      text-align: center;
+      font-family: $myfont;
+      font-size: 25px;
+    }
+  }
 
-  .centralize{
-    display: flex; 
-    justify-content: center; 
-    
-     padding: 20px;
-     width: fit-content; 
-     margin: auto;
-     align-items: center;
+  .centralize {
+    display: flex;
+    justify-content: center;
 
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+      button {
+    border: none;
+    border-radius: 8px;
+    background-color: $mainColor;
+    color: white;
+    width: 100%;
 
+    padding: 10px 0;
+    margin: {
+      top: 100px;
+      bottom: 20px;
+    }
+  }
 
+    .congratulations {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      img {
+        align-self: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 35%;
+      }
 
-     .congratulations{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        img{
-            align-self: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            width: 35%;
-        }
-   
-   h2{
-   
-       font-size: 25px;
+      h2 {
+        font-size: 25px;
         color: $mainColor;
+
+        font-family: $myfont;
+      }
+      p {
+        font-family: $formfont;
+        font-size: 16px;
+      }
+    }
+  }
+
+  nav {
+      .navbar-toggler:focus{
+          border: none;
+        
+          box-shadow: none;
+      }
+      .navbar-toggler{
+          border: none;
          
-         font-family: $myfont;
-   }
-   p{
-   font-family: $formfont;
-       font-size: 16px;
-   }
-   
-     }
-}
+      }
+    #navbarText {
+      justify-content: flex-end;
+      ul {
+        display: flex;
+        align-items: center;
+      }
+    }
 
+    .nav-item:nth-child(5) {
+      border: 1px solid $mainColor;
+      padding: 5px 20px;
+      background-color: $mainColor;
+      border-radius: 6px;
+      .nav-link {
+        color: #fff !important;
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $mainColor !important;
+        font-size: 19px;
+        font-family: $formfont;
+      }
+    }
+    .nav-item:not(:last-child) {
+      margin-right: 40px;
+    }
+    .logo {
+      display: flex;
+      gap: 10px;
 
-
-
+      h2 {
+        display: flex !important;
+        align-self: center;
+        font-family: $myfont;
+        font-weight: 600;
+        font-size: 22px;
+        color: $mainColor;
+      }
+    }
+  }
+  .firstSection{
+      .col-lg-5{
+          padding-top: 85px;
+      }
+    h1{
+        font-weight: 700;
+font-size: 50px;
+color: $mainColor;
+font-family: $myfont;
+    }
+    p{
+        color: rgba(0, 0, 0, 0.8);
+        font-family: $formfont;
+        font-size: 20px;
+        padding: {
+            top:30px;
+            bottom: 30px;
+        }
+    }
+    button{
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+           
+        }
+        color: $mainColor;
+         background-color: $mainColor;
+        padding: 10px 50px;
+        border: 1px solid $mainColor;
+        border-radius: 6px;
+    }
+  }
 }

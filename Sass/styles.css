@@ -22,7 +22,7 @@ body .misc ::placeholder {
   font-size: 8px;
 }
 
-body button {
+body .SignUpContainer button {
   border: none;
   border-radius: 8px;
   background-color: #028C32;
@@ -98,6 +98,17 @@ body .SignUpContainer #validationCustom05 {
           box-shadow: none;
 }
 
+body .LoginContainer button {
+  border: none;
+  border-radius: 8px;
+  background-color: #028C32;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
 body .LoginContainer form {
   background-color: white;
   padding: 50px;
@@ -139,6 +150,17 @@ body .LoginContainer input:focus {
   border: 1px solid rgba(2, 140, 50, 0.6);
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+body .SellWasteContainer button {
+  border: none;
+  border-radius: 8px;
+  background-color: #028C32;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 body .SellWasteContainer input {
@@ -203,6 +225,17 @@ body .SellWasteContainer #validationCustom05 {
           box-shadow: none;
 }
 
+body .ForgotPasswordContainer button {
+  border: none;
+  border-radius: 8px;
+  background-color: #028C32;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
 body .ForgotPasswordContainer .text {
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -247,6 +280,17 @@ body .ForgotPasswordContainer input:focus {
 
 body .ForgotPasswordContainer button {
   margin-top: 250px;
+}
+
+body .ResetContainer button {
+  border: none;
+  border-radius: 8px;
+  background-color: #028C32;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 body .ResetContainer .text {
@@ -315,6 +359,17 @@ body .central {
           align-items: center;
 }
 
+body .central button {
+  border: none;
+  border-radius: 8px;
+  background-color: #028C32;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
 body .central p {
   font-weight: 400;
   font-size: 16px;
@@ -345,6 +400,17 @@ body .centralize {
           align-items: center;
 }
 
+body .centralize button {
+  border: none;
+  border-radius: 8px;
+  background-color: #028C32;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
 body .centralize .congratulations {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,6 +439,104 @@ body .centralize .congratulations h2 {
 
 body .centralize .congratulations p {
   font-family: "Mulish", sans-serif;
+  font-size: 16px;
+}
+
+body nav .navbar-toggler:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body nav .navbar-toggler {
+  border: none;
+}
+
+body nav #navbarText {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body nav #navbarText ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .nav-item:nth-child(5) {
+  border: 1px solid #028C32;
+  padding: 5px 20px;
+  background-color: #028C32;
+  border-radius: 6px;
+}
+
+body nav .nav-item:nth-child(5) .nav-link {
+  color: #fff !important;
+}
+
+body nav .nav-item .nav-link {
+  color: #028C32 !important;
+  font-size: 19px;
+  font-family: "Mulish", sans-serif;
+}
+
+body nav .nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+body nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+body nav .logo h2 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #028C32;
+}
+
+body .firstSection .col-lg-5 {
+  padding-top: 85px;
+}
+
+body .firstSection h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #028C32;
+  font-family: "Inter", sans-serif;
+}
+
+body .firstSection p {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+body .firstSection button {
+  color: #028C32;
+  background-color: #028C32;
+  padding: 10px 50px;
+  border: 1px solid #028C32;
+  border-radius: 6px;
+}
+
+body .firstSection button a {
+  text-decoration: none;
+  color: white;
   font-size: 16px;
 }
 /*# sourceMappingURL=styles.css.map */
