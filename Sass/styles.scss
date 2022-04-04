@@ -13,21 +13,20 @@ body {
     }
   }
 
-
   .SignUpContainer {
-        button {
-    border: none;
-    border-radius: 8px;
-    background-color: $mainColor;
-    color: white;
-    width: 100%;
+    button {
+      border: none;
+      border-radius: 8px;
+      background-color: $mainColor;
+      color: white;
+      width: 100%;
 
-    padding: 10px 0;
-    margin: {
-      top: 100px;
-      bottom: 20px;
+      padding: 10px 0;
+      margin: {
+        top: 100px;
+        bottom: 20px;
+      }
     }
-  }
     h2 {
       text-transform: uppercase;
       color: $mainColor;
@@ -85,19 +84,19 @@ body {
   }
 
   .LoginContainer {
-        button {
-    border: none;
-    border-radius: 8px;
-    background-color: $mainColor;
-    color: white;
-    width: 100%;
+    button {
+      border: none;
+      border-radius: 8px;
+      background-color: $mainColor;
+      color: white;
+      width: 100%;
 
-    padding: 10px 0;
-    margin: {
-      top: 100px;
-      bottom: 20px;
+      padding: 10px 0;
+      margin: {
+        top: 100px;
+        bottom: 20px;
+      }
     }
-  }
     form {
       background-color: white;
       padding: 50px;
@@ -126,19 +125,19 @@ body {
   }
 
   .SellWasteContainer {
-        button {
-    border: none;
-    border-radius: 8px;
-    background-color: $mainColor;
-    color: white;
-    width: 100%;
+    button {
+      border: none;
+      border-radius: 8px;
+      background-color: $mainColor;
+      color: white;
+      width: 100%;
 
-    padding: 10px 0;
-    margin: {
-      top: 100px;
-      bottom: 20px;
+      padding: 10px 0;
+      margin: {
+        top: 100px;
+        bottom: 20px;
+      }
     }
-  }
     input {
       border: 1px solid $formColor;
       padding: 10px;
@@ -185,19 +184,19 @@ body {
   }
 
   .ForgotPasswordContainer {
-        button {
-    border: none;
-    border-radius: 8px;
-    background-color: $mainColor;
-    color: white;
-    width: 100%;
+    button {
+      border: none;
+      border-radius: 8px;
+      background-color: $mainColor;
+      color: white;
+      width: 100%;
 
-    padding: 10px 0;
-    margin: {
-      top: 100px;
-      bottom: 20px;
+      padding: 10px 0;
+      margin: {
+        top: 100px;
+        bottom: 20px;
+      }
     }
-  }
     .text {
       font-family: $myfont;
       text-align: center;
@@ -228,19 +227,19 @@ body {
   }
 
   .ResetContainer {
-        button {
-    border: none;
-    border-radius: 8px;
-    background-color: $mainColor;
-    color: white;
-    width: 100%;
+    button {
+      border: none;
+      border-radius: 8px;
+      background-color: $mainColor;
+      color: white;
+      width: 100%;
 
-    padding: 10px 0;
-    margin: {
-      top: 100px;
-      bottom: 20px;
+      padding: 10px 0;
+      margin: {
+        top: 100px;
+        bottom: 20px;
+      }
     }
-  }
     .text {
       text-align: center;
       h2 {
@@ -277,19 +276,19 @@ body {
     width: fit-content;
     margin: auto;
     align-items: center;
-      button {
-    border: none;
-    border-radius: 8px;
-    background-color: $mainColor;
-    color: white;
-    width: 100%;
+    button {
+      border: none;
+      border-radius: 8px;
+      background-color: $mainColor;
+      color: white;
+      width: 100%;
 
-    padding: 10px 0;
-    margin: {
-      top: 100px;
-      bottom: 20px;
+      padding: 10px 0;
+      margin: {
+        top: 100px;
+        bottom: 20px;
+      }
     }
-  }
 
     p {
       font-weight: 400;
@@ -313,19 +312,19 @@ body {
     width: fit-content;
     margin: auto;
     align-items: center;
-      button {
-    border: none;
-    border-radius: 8px;
-    background-color: $mainColor;
-    color: white;
-    width: 100%;
+    button {
+      border: none;
+      border-radius: 8px;
+      background-color: $mainColor;
+      color: white;
+      width: 100%;
 
-    padding: 10px 0;
-    margin: {
-      top: 100px;
-      bottom: 20px;
+      padding: 10px 0;
+      margin: {
+        top: 100px;
+        bottom: 20px;
+      }
     }
-  }
 
     .congratulations {
       display: flex;
@@ -352,15 +351,18 @@ body {
   }
 
   nav {
-      .navbar-toggler:focus{
-          border: none;
-        
-          box-shadow: none;
-      }
-      .navbar-toggler{
-          border: none;
-         
-      }
+    background: linear-gradient(0deg, #ffffff, #ffffff),
+      linear-gradient(90.01deg, #08bd46 0.84%, rgba(44, 255, 204, 0) 194.85%);
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
+    .navbar-toggler:focus {
+      border: none;
+
+      box-shadow: none;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+
     #navbarText {
       justify-content: flex-end;
       ul {
@@ -371,7 +373,9 @@ body {
 
     .nav-item:nth-child(5) {
       border: 1px solid $mainColor;
-      padding: 5px 20px;
+      width: 200px;
+      height: 55px;
+      text-align: center;
       background-color: $mainColor;
       border-radius: 6px;
       .nav-link {
@@ -391,48 +395,64 @@ body {
     .logo {
       display: flex;
       gap: 10px;
+      align-items: center;
 
-      h2 {
+      span {
         display: flex !important;
         align-self: center;
         font-family: $myfont;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 22px;
         color: $mainColor;
       }
     }
   }
-  .firstSection{
-      .col-lg-5{
-          padding-top: 85px;
+  
+  .firstSection {
+    
+
+          background: #EEEEEE;
+  
+    .col-lg-5 {
+      padding-top: 85px;
+       @media screen and (max-width:$width){
+           padding-top: 25px;
+       }
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 50px;
+      color: $mainColor;
+      font-family: $myfont;
+       @media screen and (max-width:$width){
+           font-size: 34px;
+           line-height: 50px;
+       }
+    }
+    p {
+      color: rgba(0, 0, 0, 0.8);
+      font-family: $formfont;
+      font-size: 18px;
+      padding: {
+        top: 30px;
+        bottom: 30px;
       }
-    h1{
-        font-weight: 700;
-font-size: 50px;
-color: $mainColor;
-font-family: $myfont;
     }
-    p{
-        color: rgba(0, 0, 0, 0.8);
-        font-family: $formfont;
-        font-size: 20px;
-        padding: {
-            top:30px;
-            bottom: 30px;
-        }
+    button {
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+      }
+      color: $mainColor;
+      background-color: $mainColor;
+      padding: 10px 50px;
+      border: 1px solid $mainColor;
+      border-radius: 6px;
+      margin-bottom: 30px;
     }
-    button{
-        a{
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-           
-        }
-        color: $mainColor;
-         background-color: $mainColor;
-        padding: 10px 50px;
-        border: 1px solid $mainColor;
-        border-radius: 6px;
+    img{
+        padding-top: 40px;
     }
   }
 }

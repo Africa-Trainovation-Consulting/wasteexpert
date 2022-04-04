@@ -442,6 +442,12 @@ body .centralize .congratulations p {
   font-size: 16px;
 }
 
+body nav {
+  background: linear-gradient(0deg, #ffffff, #ffffff), linear-gradient(90.01deg, #08bd46 0.84%, rgba(44, 255, 204, 0) 194.85%);
+  -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
+}
+
 body nav .navbar-toggler:focus {
   border: none;
   -webkit-box-shadow: none;
@@ -469,7 +475,9 @@ body nav #navbarText ul {
 
 body nav .nav-item:nth-child(5) {
   border: 1px solid #028C32;
-  padding: 5px 20px;
+  width: 200px;
+  height: 55px;
+  text-align: center;
   background-color: #028C32;
   border-radius: 6px;
 }
@@ -493,22 +501,35 @@ body nav .logo {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body nav .logo h2 {
+body nav .logo span {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
   -ms-flex-item-align: center;
       align-self: center;
   font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 22px;
   color: #028C32;
 }
 
+body .firstSection {
+  background: #EEEEEE;
+}
+
 body .firstSection .col-lg-5 {
   padding-top: 85px;
+}
+
+@media screen and (max-width: 900px) {
+  body .firstSection .col-lg-5 {
+    padding-top: 25px;
+  }
 }
 
 body .firstSection h1 {
@@ -518,10 +539,17 @@ body .firstSection h1 {
   font-family: "Inter", sans-serif;
 }
 
+@media screen and (max-width: 900px) {
+  body .firstSection h1 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+}
+
 body .firstSection p {
   color: rgba(0, 0, 0, 0.8);
   font-family: "Mulish", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -532,11 +560,16 @@ body .firstSection button {
   padding: 10px 50px;
   border: 1px solid #028C32;
   border-radius: 6px;
+  margin-bottom: 30px;
 }
 
 body .firstSection button a {
   text-decoration: none;
   color: white;
   font-size: 16px;
+}
+
+body .firstSection img {
+  padding-top: 40px;
 }
 /*# sourceMappingURL=styles.css.map */

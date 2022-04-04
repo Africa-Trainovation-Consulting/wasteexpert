@@ -21,3 +21,7 @@
     );
   });
 })();
+
+document.getElementById(icon).onclick = function(){
+   icon.classList.toggle("fa-times");
+}
