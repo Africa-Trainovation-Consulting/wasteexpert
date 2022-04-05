@@ -142,6 +142,10 @@ header {
   }
 }
 
+footer {
+  background-color: #028C32;
+}
+
 footer .newsletter .enter {
   text-align: right;
 }
@@ -159,6 +163,8 @@ footer .newsletter .enter form button {
   border-radius: 5px;
   outline: none;
   padding: 5px 12px 5px 12px;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 footer .ftext p {
@@ -171,6 +177,16 @@ footer .ftext p {
 
 footer ul {
   text-align: justify;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 footer hr {
@@ -187,48 +203,31 @@ footer .Copyright {
   padding-bottom: 15px;
 }
 
-.adviceText {
-  text-align: center;
+.wealth, .wealth2, .wealth3 {
+  background-image: url(/Asset/img/bg10.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.adviceText h4 {
-  padding-top: 10vh;
+.wealth h5, .wealth2 h5, .wealth3 h5 {
   color: #028C32;
+  font-size: 60px;
+  padding-top: 6vh;
 }
 
-.adviceText p {
-  padding: 10vh;
+.wealth p, .wealth2 p, .wealth3 p {
+  color: #000000;
 }
 
-footer {
-  background-color: #028C32;
+.wealth2 {
+  background-image: url(/Asset/img/bg11.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-footer .newsletter {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-footer .newsletter label {
-  color: #FFFFFF;
-}
-
-footer .newsletter button {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-footer .ft .abt ul li, footer .ft .contact ul li, footer .ft .services ul li {
-  list-style: none;
-}
-
-footer .ft .abt ul li a, footer .ft .contact ul li a, footer .ft .services ul li a {
-  text-decoration: none;
-  color: #FFFFFF;
-  text-align: center;
+.wealth3 {
+  background-image: url(/Asset/img/bg12.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

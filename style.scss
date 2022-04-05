@@ -54,95 +54,6 @@ header {
         }
     }
 }
-// nav {
-//     display: flex;
-//     justify-content: space-between;
-//     background-color: $nav;
-//     font-weight: 600;
-//     padding: 2vw;
-//     box-shadow: $boxShadow;
-
-//     .wasteX {
-//         padding-top: 4vh;
-//         color: $color1;
-//         img {
-//             width: 50px;
-//         }
-//     }
-
-//     .navBar {
-//         display: flex;
-//         list-style: none;
-//         text-align: center;
-//         padding-top: 3vh;
-
-//         li{
-//             a{
-//                 color: $color1;
-//                 font-weight: 500;
-
-//             }
-//         }
-
-//         #btn2.btn{
-//             display: none;
-//             @media screen and(max-width:780px){
-//                 display: flex;
-//         background-color: $color1;
-
-//             }
-
-//         }
-
-//         @media screen and(max-width:780px) {
-//             display: block;
-//             position: absolute;
-//             color: white;
-//             top: 67px;
-//             left: -200vh;
-//             &.show {
-//                 display: flex;
-//                 flex-direction: column;
-//                 position: relative;
-//                 background-color: transparent;
-//                 min-height: 400px;
-//                 color: white;
-//                 top: 49px;
-//                 left: -125px;
-//             }
-//         }
-//     }
-//     .btn1 {
-//         background-color: $color1;
-//         color: $ptext1;
-//         outline: none;
-//         padding-right: 40px;
-//         padding-left: 40px;
-//         font-weight: 500;
-//         margin-top: 22px;
-//         margin-bottom: 36px;
-//         margin-left: 100px;
-
-//         @media screen and(max-width:780px) {
-//             display: none;
-//         }
-//         &:hover {
-//             background-color:$ptext1 ;
-//             color: $color1;
-//             pointer-events: visible;
-//             cursor: pointer;
-//         }
-//     }
-//     .fa {
-//         padding-top: 4vh;
-//         color: $color1;
-//         font-size: 30px;
-
-//         @media screen and(min-width:780px) {
-//             display: none;
-//         }
-//     }
-// }
 
 .AboutUs {
     border-bottom: 40px solid $color1;
@@ -235,6 +146,7 @@ header {
 }
 
 footer {
+    background-color: $color1;
     // border-bottom: 5px solid red;
     .newsletter {
         .enter {
@@ -255,6 +167,8 @@ footer {
                     border-radius: 5px;
                     outline: none;
                     padding: 5px 12px 5px 12px;
+                    background-color: $btn;
+                    color: $ptext2;
                 }
             }
         }
@@ -268,6 +182,15 @@ footer {
     }
     ul{
         text-align: justify;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $ptext2;
+                text-align: center;
+            }
+        }
+
     }
     hr{
         color: $ptext2;
@@ -279,103 +202,32 @@ footer {
     }
 }
 
-// .aboutUs {
-//     background-image: url(./Asset/img/aboutUsBg.svg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-color: $color1;
-//     background-position: center;
-//     // height: 60vh;
-//     h2 {
-//         color: $ptext2;
-//         padding-top: 10vh;
-//         }
-//     }
-//     p {
-//         color: $ptext2;
-//         // padding-bottom: 10vh;
-//     }
-// }
-// .wasteMenace {
-//     .wasteText {
-//         // max-height: 30vh;
-//         h2 {
-//             color: $color1;
-//         }
-//         p {
-//             font-size: small;
-//         }
-//     }
-// }
-// .OurSolution {
-//     background-color: $color1;
-//     .solutionText {
-//         h2 {
-//             color: $ptext2;
-//         }
-//         p {
-//             color: $ptext2;
-//         }
-//     }
-// }
-// .wasteRecycle {
-//     background-color: $bg1;
-//     .RecycleText {
-//         p {
-//             padding-top: 10vh;
-//         }
-//     }
-// }
-// .advice {
-// background-image: url(/Asset/img/aboutUSrecycle-bin.svg);
-// background-repeat: no-repeat;
-// transform: translate-y(20px);
+//Index2 styles
 
-// background-image: url(/Asset/img/aboutUSecology.svg);
-.adviceText {
-    text-align: center;
-    h4 {
-        padding-top: 10vh;
+.wealth{
+    background-image: url(/Asset/img/bg10.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h5{
         color: $color1;
+        font-size: 60px;
+        padding-top: 6vh;
     }
-
-    p {
-        // text-align: center;
-        padding: 10vh;
-    }
-}
-
-footer {
-    background-color: $color1;
-    .newsletter {
-        justify-content: space-between;
-        display: flex;
-        label {
-            color: $ptext2;
-        }
-        button {
-            background-color: $btn;
-            color: $ptext2;
-        }
-    }
-    .ft {
-        .abt {
-            ul {
-                li {
-                    list-style: none;
-                    a {
-                        text-decoration: none;
-                        color: $ptext2;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-        .contact {
-            @extend .abt;
-        }
-        .services {
-            @extend .abt;
-        }
+    p{
+        color: $btn;
     }
 }
+.wealth2{
+    background-image: url(/Asset/img/bg11.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend .wealth
+}
+.wealth3{
+    background-image: url(/Asset/img/bg12.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend .wealth
+
+}
+
