@@ -209,10 +209,6 @@ footer .newsletter .enter {
   text-align: right;
 }
 
-footer .newsletter .enter form label {
-  text-align: center;
-}
-
 footer .newsletter .enter form input {
   border-radius: 5px;
   padding: 5px 12px 5px 12px;
@@ -294,5 +290,13 @@ footer .Copyright {
   color: #028C32;
   text-align: center;
   padding-top: 5vh;
+}
+
+.card-group .card {
+  background-color: #08BD46B2;
+}
+
+.Sectiontable .tt {
+  overflow-x: scroll;
 }
 /*# sourceMappingURL=style.css.map */

@@ -156,10 +156,10 @@ footer {
             // margin-right: -4vw;
            
             form{
-                label{
-                    text-align: center;
+                // label{
+                //     text-align: center;
                     
-                }
+                // }
                 input{
                     border-radius: 5px;
                     padding: 5px 12px 5px 12px;
@@ -237,5 +237,16 @@ footer {
         color: $color1;
     text-align: center;
     padding-top: 5vh;
+    }
+}
+.card-group{
+    .card{
+        background-color: $cardcolor;
+    }
+}
+
+.Sectiontable{
+    .tt{
+        overflow-x: scroll;
     }
 }
