@@ -13,6 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Mulish:wght@200;300;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700&display=swap" rel="stylesheet">
@@ -29,7 +32,8 @@
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" id="icon"></span>
+                <!-- <span><i class="fa-solid fa-bars" onclick="changeicon(this)"></i></span> -->
+                <span><i class="fa-solid fa-bars" id="icon"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav  mb-2 mb-lg-0">
@@ -105,7 +109,245 @@
             </div>
         </div>
     </div>
+    <div class="faq">
+        <div class="container">
+            <h1>Frequently asked questions</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How do i become an agent?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Fill out the form and click“Become an Agent” or Sign up directly on our website as an agent
+                            and we will have one of our
+                            representatives reach you to continue your onboarding process.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How much does it cost to sign as a Wastexpert agent?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the second item's accordion body. It is hidden by default, until
+                            the collapse
+                            plugin adds the appropriate classes that we use to style each element.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            As a new wastexpert Agent/ collector, will i be trained on how to
+                            transacts on wastexpert?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the third item's accordion body It is hidden by default, until the
+                            collapse
+                            plugin adds the appropriate classes that we use to style each element. These classes control
+                            the overall
+                            appearance, as well as the showing and hiding via CSS transitions.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            What is the size of space i need?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the third item's accordion body It is hidden by default, until the
+                            collapse
+                            plugin adds the appropriate classes that we use to style each element.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            As a Wastexpert Agent, can i operate from anywhere in Nigeria?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Yes,you can.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+
+    </div>
+
+    <section class="lastSection">
+        <div class="container">
+            <h2>Still have a question?</h2>
+            <p>If you cannot find answer to your question in our FAQ, <br> you can always Contact us. <br> we will get
+                back to you
+                shortly!</p>
+            <button> <a href="#">Contact Us</a></button>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/Images/footerLogo.svg" alt="Logo">
+                    <p>Wastexpert</p>
+
+                </div>
+                <div class="col-md-6">
+                    <label for="subscribe">Subscribe to our Newsletter</label>
+                    <div class="flex d-flex">
+                        <input type="email" placeholder="Enter your email address here" name="subscription"
+                            id="subscribe">
+                        <button><a href="">Sign up</a></button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row content">
+                <div class="col-md-4">
+                    <p>
+                        Wastexpert is a waste recycling and social benefit venture borne out of sheer passion and vision
+                        to
+                        transform our
+                        environment into a zero landfill and zero waste nation. We operates an incentive-based scheme
+                        which
+                        collects recyclable
+                        materials from post consumers and in turn rewards them with “Points” which they can accumulate
+                        overtime and cash out or
+                        use to redeem/shop for household items offered through our Wastexpert store.
+                    </p>
+                </div>
+                <div class="col-md-2 none">
+                    <ul>
+                        <li>About
+
+                        </li>
+                        <br>
+                        <li>
+
+                            Our Mission
+                        </li>
+                        <li>
+
+                            Visions
+                        </li>
+                        <li>
+
+                            Solutions
+                        </li>
+                        <li>
+
+                            Teams
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 none">
+                    <ul>
+                        <li>Contact Us
+
+                        </li>
+                        <br>
+                        <li>
+
+                            Our Mission
+                        </li>
+                        <li>
+
+                            Visions
+                        </li>
+                        <li>
+
+                            Solutions
+                        </li>
+                        <li>
+
+                            Teams
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 none">
+                    <ul>
+                        <li>Services
+
+                        </li>
+                        <br>
+                        <li>
+
+                            Waste to wealth pick up
+
+                        </li>
+                        <li>
+
+                            Flip-it
+                        </li>
+                        <li>
+
+                            Waste drop point
+                        </li>
+                        <li>
+
+                            Corporate Recycling
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="shownot">
+                    <li> <a href="">About</li></a>
+
+                    <li><a href="">Contact us</li></a>
+                    <li><a href="">Services</li></a>
+                    <li><a href="">FAQ</li></a>
+                </ul>
+
+
+
+
+
+            </div>
+            <div class="row">
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    Copyright © 2020, Created by Wastexpert Team
+                </div>
+                <div class="col-md-3">
+                    <a href=""> <img src="/Images/facebook1.svg" alt=""></a>
+                     <a href=""><img src="/Images/instagram2.svg" alt=""></a>
+                     <a href=""><img src="/Images/twitter3.svg" alt=""></a>
+                    <a href="">  <a href=""><img src="/Images/linkedin 4.svg" alt=""></a>
+                     <a href=""><img src="/Images/linkedin5.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

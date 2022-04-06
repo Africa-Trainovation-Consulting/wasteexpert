@@ -458,6 +458,10 @@ body nav .navbar-toggler {
   border: none;
 }
 
+body nav .fa-solid {
+  font-size: 30px;
+}
+
 body nav #navbarText {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -507,19 +511,20 @@ body nav .logo {
 }
 
 body nav .logo span {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -ms-flex-item-align: center;
-      align-self: center;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 22px;
   color: #028C32;
 }
 
+@media screen and (max-width: 900px) {
+  body nav .logo span {
+    display: none;
+  }
+}
+
 body .firstSection {
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 
 body .firstSection .col-lg-5 {
@@ -592,7 +597,7 @@ body .secondSection h2 {
 }
 
 body .secondSection p {
-  color: #676B69;
+  color: #676b69;
   line-height: 25px;
   font-family: "Mulish", sans-serif;
   padding-top: 30px;
@@ -601,5 +606,262 @@ body .secondSection p {
 
 body .secondSection .para {
   padding-top: 45px;
+}
+
+body .faq h1 {
+  font-size: 40px;
+  color: #028C32;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  padding-top: 60px;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 900px) {
+  body .faq h1 {
+    font-size: 28px;
+  }
+}
+
+body .faq .accordion {
+  border-radius: 6px;
+}
+
+body .faq .accordion-button {
+  font-size: 22px;
+  line-height: 140%;
+  font-family: "Mulish", sans-serif;
+  color: #028C32;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: rgba(154, 153, 153, 0.08);
+}
+
+body .faq .accordion-item {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  background: rgba(154, 153, 153, 0.08) !important;
+  font-family: "Mulish", sans-serif;
+}
+
+body .lastSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Mulish", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body .lastSection h2 {
+  font-size: 37px;
+  line-height: 110.02%;
+  color: #028C32;
+  padding-top: 60px;
+}
+
+body .lastSection p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140.02%;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+body .lastSection button {
+  color: #028C32;
+  background-color: #028C32;
+  padding: 10px 50px;
+  border: 1px solid #028C32;
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+body .lastSection button a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+body footer {
+  padding-top: 90px;
+  background-color: #028C32;
+}
+
+@media screen and (max-width: 900px) {
+  body footer .col-md-6:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body footer .col-md-6:first-child p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  padding-top: 10px;
+}
+
+body footer .col-md-6:nth-child(2) label {
+  font-size: 18px;
+  line-height: 155%;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+}
+
+body footer .col-md-6:nth-child(2) input {
+  width: 470px;
+  height: 50px;
+  padding: 0px 10px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  outline: none;
+}
+
+body footer .col-md-6:nth-child(2) input ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.36);
+}
+
+body footer .col-md-6:nth-child(2) input :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.36);
+}
+
+body footer .col-md-6:nth-child(2) input ::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.36);
+}
+
+body footer .col-md-6:nth-child(2) input ::placeholder {
+  color: rgba(0, 0, 0, 0.36);
+}
+
+body footer .col-md-6:nth-child(2) input ::-webkit-input-placeholder :focus {
+  outline: none;
+}
+
+body footer .col-md-6:nth-child(2) input :-ms-input-placeholder :focus {
+  outline: none;
+}
+
+body footer .col-md-6:nth-child(2) input ::-ms-input-placeholder :focus {
+  outline: none;
+}
+
+body footer .col-md-6:nth-child(2) input ::placeholder :focus {
+  outline: none;
+}
+
+body footer .col-md-6:nth-child(2) button {
+  background-color: #000;
+  width: 133px;
+  height: 50px;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  margin-right: 5px;
+}
+
+body footer .col-md-6:nth-child(2) button a {
+  color: white;
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  body footer .col-md-6:nth-child(2) {
+    display: none;
+  }
+}
+
+body footer .row:nth-child(2) {
+  font-family: "Mulish", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  body footer .row:nth-child(2) .none {
+    display: none;
+  }
+}
+
+body footer .row:nth-child(2) .col-md-4 p {
+  font-weight: 400;
+  color: #fff;
+  font-size: 17px;
+  line-height: 155%;
+}
+
+@media screen and (max-width: 900px) {
+  body footer .row:nth-child(2) .col-md-4 p {
+    line-height: 210%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body footer .row:nth-child(2) .col-md-4 {
+    text-align: center;
+  }
+}
+
+body footer .row:nth-child(2) li {
+  list-style: none;
+  color: #fff;
+  font-size: 17px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 900px) {
+  body footer .row:nth-child(2) li {
+    font-size: 19px;
+    line-height: 60px;
+  }
+}
+
+body footer .row:nth-child(2) ul li:first-child {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 900px) {
+  body footer .row:nth-child(2) ul li:first-child {
+    font-size: 19px;
+  }
+}
+
+body footer .row:nth-child(2) .shownot {
+  display: none;
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+}
+
+body footer .row:nth-child(2) .shownot a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  body footer .row:nth-child(2) .shownot {
+    display: block;
+  }
+}
+
+body footer hr {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

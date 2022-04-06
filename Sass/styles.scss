@@ -362,6 +362,9 @@ body {
     .navbar-toggler {
       border: none;
     }
+    .fa-solid {
+      font-size: 30px;
+    }
 
     #navbarText {
       justify-content: flex-end;
@@ -398,36 +401,35 @@ body {
       align-items: center;
 
       span {
-        display: flex !important;
-        align-self: center;
         font-family: $myfont;
         font-weight: 400;
         font-size: 22px;
         color: $mainColor;
+        @media screen and (max-width: $width) {
+          display: none;
+        }
       }
     }
   }
-  
-  .firstSection {
-    
 
-          background: #EEEEEE;
-  
+  .firstSection {
+    background: #eeeeee;
+
     .col-lg-5 {
       padding-top: 85px;
-       @media screen and (max-width:$width){
-           padding-top: 25px;
-       }
+      @media screen and (max-width: $width) {
+        padding-top: 25px;
+      }
     }
     h1 {
       font-weight: 700;
       font-size: 50px;
       color: $mainColor;
       font-family: $myfont;
-       @media screen and (max-width:$width){
-           font-size: 34px;
-           line-height: 50px;
-       }
+      @media screen and (max-width: $width) {
+        font-size: 34px;
+        line-height: 50px;
+      }
     }
     p {
       color: rgba(0, 0, 0, 0.8);
@@ -451,36 +453,237 @@ body {
       border-radius: 6px;
       margin-bottom: 30px;
     }
-    img{
-        padding-top: 40px;
+    img {
+      padding-top: 40px;
     }
   }
-  .secondSection{
-      text-align: center;
-      border-bottom: 40px solid $mainColor;
-      h2{
-          font-size: 39px;
-          font-family: $formfont;
-          padding: {
-              top: 30px;
-              bottom:30px;
-          }
-              @media screen and (max-width:$width){
-                  font-size: 28px;
-              }
+  .secondSection {
+    text-align: center;
+    border-bottom: 40px solid $mainColor;
+    h2 {
+      font-size: 39px;
+      font-family: $formfont;
+      padding: {
+        top: 30px;
+        bottom: 30px;
       }
-      p{
-          color: #676B69;
-          line-height: 25px;
-          font-family: $formfont;
-        //   font-size: 16px;
-        padding: {
-            top: 30px;
-            bottom: 30px;
+      @media screen and (max-width: $width) {
+        font-size: 28px;
+      }
+    }
+    p {
+      color: #676b69;
+      line-height: 25px;
+      font-family: $formfont;
+      //   font-size: 16px;
+      padding: {
+        top: 30px;
+        bottom: 30px;
+      }
+    }
+    .para {
+      padding-top: 45px;
+    }
+  }
+  .faq {
+    h1 {
+      font-size: 40px;
+      color: $mainColor;
+      text-align: center;
+      font-family: $formfont;
+      padding-top: 60px;
+      line-height: 140%;
+      @media screen and (max-width: $width) {
+        font-size: 28px;
+      }
+    }
+    .accordion {
+      border-radius: 6px;
+    }
+
+    .accordion-button {
+      font-size: 22px;
+      line-height: 140%;
+      font-family: $formfont;
+      color: $mainColor;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background: rgba(154, 153, 153, 0.08);
+      //  border-radius: 6px;
+    }
+    .accordion-item {
+      //   font-weight: 600;
+      font-weight: 400;
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.5);
+      background: rgba(154, 153, 153, 0.08) !important;
+
+      font-family: $formfont;
+    }
+  }
+
+  .lastSection {
+    display: flex;
+    flex-direction: column;
+    font-family: $formfont;
+    justify-content: center;
+    text-align: center;
+    h2 {
+      font-size: 37px;
+
+      line-height: 110.02%;
+      color: $mainColor;
+      padding-top: 60px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140.02%;
+      color: rgba(0, 0, 0, 0.61);
+    }
+    button {
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+      color: $mainColor;
+      background-color: $mainColor;
+      padding: 10px 50px;
+      border: 1px solid $mainColor;
+      border-radius: 6px;
+      margin-top: 30px;
+      margin-bottom: 70px;
+    }
+  }
+  footer {
+    padding-top: 90px;
+    background-color: $mainColor;
+    .col-md-6:first-child {
+      @media screen and (max-width: $width){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      p {
+        color: #fff;
+        font-size: 20px;
+        font-family: $myfont;
+        padding-top: 10px;
+      }
+    }
+    .col-md-6:nth-child(2) {
+      label {
+        font-size: 18px;
+        line-height: 155%;
+        color: #fff;
+        font-family: $formfont;
+      }
+
+      input {
+        width: 470px;
+        height: 50px;
+        padding: 0px 10px;
+        border-radius: 8px 0 0 8px;
+        border: none;
+
+        outline: none;
+        ::placeholder {
+          color: rgba(0, 0, 0, 0.36);
+          :focus {
+            outline: none;
+          }
         }
       }
-      .para{
-          padding-top: 45px;
+      button {
+        background-color: #000;
+        width: 133px;
+        height: 50px;
+        border-radius: 0 8px 8px 0;
+        border: none;
+        margin-right: 5px;
+        a {
+          color: white;
+          font-size: 18px;
+          font-family: $formfont;
+          text-decoration: none;
+        }
+      }
+      @media screen and (max-width: $width){
+        display: none;
+      }
+    }
+    .row:nth-child(2){
+      font-family: $formfont;
+      padding-top: 50px;
+      padding-bottom: 60px;
+      @media screen and (max-width: $width){
+        .none{
+          display: none
+        }
+
+      }
+  
+    .col-md-4{
+      p{
+
+        font-weight: 400;
+        color: #fff;
+  font-size: 17px;
+  
+  line-height: 155%;
+    @media screen and (max-width: $width){
+      line-height: 210%;
+    }
+  
+      }
+      @media screen and (max-width: $width){
+        text-align: center;
+      }
+    }
+   
+      li{
+
+        list-style: none;
+        color: #fff;
+        font-size: 17px;
+       
+        line-height: 40px;
+        font-weight: normal;
+          @media screen and (max-width: $width){
+            font-size: 19px;
+            line-height: 60px;
+          }
+      }
+      ul{
+
+        li:first-child{
+          font-size: 22px;
+            @media screen and (max-width: $width){
+              font-size: 19px;
+            }
+        }
+      }
+      .shownot{
+        display: none;
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+        
+        a{
+          text-decoration: none;
+          color: white;
+        }
+        
+          @media screen and (max-width: $width){
+            display: block;
+          }
+        
+      }
+  
+      }
+      hr{
+        color: white;
+        
       }
   }
 }

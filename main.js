@@ -22,6 +22,8 @@
   });
 })();
 
-document.getElementById(icon).onclick = function(){
-   icon.classList.toggle("fa-times");
+//  changeicon = (icon) => icon.classList.toggle("fa-times");
+//   Another method for the toggle 
+document.getElementById('icon').onclick = function(){
+  document.getElementById('icon').classList.toggle('fa-times')
 }
