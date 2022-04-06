@@ -11,15 +11,63 @@
   }
 }
 
+.texts {
+  font-size: 33px !important;
+}
+
+@media screen and (min-width: 360px) {
+  .texts {
+    width: 84%;
+  }
+}
+
+@media screen and (min-width: 424px) {
+  .texts {
+    font-size: 40px !important;
+    width: 87%;
+  }
+}
+
+@media screen and (min-width: 497px) {
+  .texts {
+    font-size: 48px !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .texts {
+    width: 100%;
+    font-size: 27px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .texts {
+    font-size: 35px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .texts {
+    font-size: 45px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .texts {
+    font-size: 54px !important;
+  }
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
+  background-color: white;
 }
 
 .navbar {
-  background-color: linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
 }
@@ -81,6 +129,17 @@ header {
 
 .AboutUs h2 {
   color: #028C32;
+}
+
+.AboutUs h2::before {
+  content: "";
+  height: 3px;
+  width: 200px;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+  display: block;
+  background-color: green;
+  margin: auto;
 }
 
 .AboutUs p {
@@ -229,5 +288,11 @@ footer .Copyright {
   background-image: url(/Asset/img/bg12.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.treasure h4 {
+  color: #028C32;
+  text-align: center;
+  padding-top: 5vh;
 }
 /*# sourceMappingURL=style.css.map */

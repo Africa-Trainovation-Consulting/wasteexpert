@@ -5,9 +5,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    background-color: $headercolor;
 }
 .navbar {
-    background-color: $nav;
+    // background-color: $nav;
     box-shadow: $boxShadow;
 
     .navbar-brand {
@@ -59,16 +60,16 @@ header {
     border-bottom: 40px solid $color1;
     h2 {
         color: $color1;
-        // &::before {
-        //     content: "";
-        //     // border-right: 15px solid green;
-        //     height: 3px;
-        //     width: 200px;
-        //     transform: translateY(25px);
-        //     display: block;
-        //     background-color: green;
-        //     margin: auto;
-        // }
+        &::before {
+            content: "";
+            // border-right: 15px solid green;
+            height: 3px;
+            width: 200px;
+            transform: translateY(25px);
+            display: block;
+            background-color: green;
+            margin: auto;
+        }
     }
     p {
         color: $color1;
@@ -231,3 +232,10 @@ footer {
 
 }
 
+.treasure{
+    h4{
+        color: $color1;
+    text-align: center;
+    padding-top: 5vh;
+    }
+}
