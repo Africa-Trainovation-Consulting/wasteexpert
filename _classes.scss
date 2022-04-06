@@ -2,9 +2,44 @@
     display: flex;
     align-items: center;
 }
-.just{
+.just {
     justify-content: space-between;
 }
-.color{
+.color {
     background-color: $color2;
+}
+.myway {
+    gap: 10vw;
+    @media screen and (min-width: 768px) {
+        gap: 57.5vw;
+    }
+}
+.myways {
+    gap: 27vw;
+    @media screen and (min-width: 768px) {
+        gap: 57.5vw;
+    }
+}
+.mywayss {
+    gap: 30vw;
+}
+.lastway {
+    gap: 8vw;
+}
+.weneed {
+    gap: 36vw;
+    @media screen and (min-width: 577px) {
+        gap: 41.5vw;
+    }
+}
+.mains{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+}
+.newpoint{
+    @media screen and (min-width:992px) {
+        height: 8vh;
+    }
 }
