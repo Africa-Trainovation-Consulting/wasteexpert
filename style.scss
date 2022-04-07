@@ -152,17 +152,20 @@ footer {
     .newsletter {
         .enter {
             // padding-right: 20vw;
-            text-align: right;
+            // text-align: right;
             // margin-right: -4vw;
            
             form{
-                // label{
-                //     text-align: center;
-                    
-                // }
+                label{
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 155%;
+                    color: $ptext2;
+                }
                 input{
+                    width: 50%;
                     border-radius: 5px;
-                    padding: 5px 12px 5px 12px;
+                    // padding: 5px 12px 5px 12px;
                 }
                 button{
                     border-radius: 5px;
@@ -198,7 +201,7 @@ footer {
     }
     .Copyright{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-bottom: 15px;
     }
 }

@@ -205,13 +205,16 @@ footer {
   background-color: #028C32;
 }
 
-footer .newsletter .enter {
-  text-align: right;
+footer .newsletter .enter form label {
+  text-align: center;
+  font-size: 18px;
+  line-height: 155%;
+  color: #FFFFFF;
 }
 
 footer .newsletter .enter form input {
+  width: 50%;
   border-radius: 5px;
-  padding: 5px 12px 5px 12px;
 }
 
 footer .newsletter .enter form button {
@@ -252,9 +255,8 @@ footer .Copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-bottom: 15px;
 }
 
