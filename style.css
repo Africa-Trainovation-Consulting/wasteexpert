@@ -135,23 +135,25 @@ header {
   background-color: #00000066;
 }
 
+.imgs {
+  background-image: url(/Asset/img/Recbg1.svg);
+  background-repeat: no-repeat;
+  background-position-x: 227px;
+}
+
 .AboutUs {
   border-bottom: 40px solid #028C32;
 }
 
 .AboutUs h2 {
   color: #028C32;
+  position: relative;
 }
 
-.AboutUs h2::before {
-  content: "";
-  height: 3px;
-  width: 200px;
-  -webkit-transform: translateY(25px);
-          transform: translateY(25px);
-  display: block;
-  background-color: green;
-  margin: auto;
+.AboutUs h2 span {
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 
 .AboutUs p {
@@ -171,6 +173,13 @@ header {
 
 .WasteMenace h2 {
   color: #028C32;
+  position: relative;
+}
+
+.WasteMenace h2 span {
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 
 .WasteMenace p {
@@ -180,6 +189,13 @@ header {
 
 .OurSolution h2 {
   color: #028C32;
+  position: relative;
+}
+
+.OurSolution h2 span {
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 
 .OurSolution p {

@@ -55,21 +55,23 @@ header {
         }
     }
 }
+.imgs{
+    background-image: url(/Asset/img/Recbg1.svg);
+    background-repeat: no-repeat;
+    background-position-x: 227px;
+}
 
 .AboutUs {
     border-bottom: 40px solid $color1;
     h2 {
         color: $color1;
-        &::before {
-            content: "";
-            // border-right: 15px solid green;
-            height: 3px;
-            width: 200px;
-            transform: translateY(25px);
-            display: block;
-            background-color: green;
-            margin: auto;
+        position: relative;
+        span{
+            position: absolute;
+            top: 50%;
+            left: 0;
         }
+      
     }
     p {
         color: $color1;
@@ -79,22 +81,23 @@ header {
         background-image: url(./Asset/img/aboutUsBg.svg);
         background-repeat: no-repeat;
         background-size: cover;
+        // background-image: url(./Asset/img/Recbg1.svg);
+        // background-repeat: no-repeat;
+        // position: round($number: 9);
+        // z-index: 0;
     }
 }
 .WasteMenace {
     background-color: $bg2;
     h2 {
         color: $color1;
-        // &::before {
-        //     content: "";
-        //     // border-right: 15px solid green;
-        //     height: 3px;
-        //     width: 200px;
-        //     transform: translateY(25px);
-        //     display: block;
-        //     background-color: green;
-        //     margin-left: 200px;
-        // }
+        position: relative;
+        span{
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+     
     }
     p {
         color: $color1;
@@ -104,16 +107,14 @@ header {
 .OurSolution {
     h2 {
         color: $color1;
-        // &::before {
-        //     content: "";
-        //     // border-right: 15px solid green;
-        //     height: 3px;
-        //     width: 200px;
-        //     transform: translateY(25px);
-        //     display: block;
-        //     background-color: green;
-        //     margin-left: 180px;
-        // }
+        position: relative;
+        span{
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+     
+     
     }
     p {
         color: $color1;
