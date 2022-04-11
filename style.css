@@ -212,6 +212,34 @@ footer .newsletter .enter form label {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  footer .newsletter .enter form label {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .newsletter .enter form label {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .newsletter .enter form span {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .newsletter .enter form span {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 footer .newsletter .enter form input {
   width: 50%;
   border-radius: 5px;
