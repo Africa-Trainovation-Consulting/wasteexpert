@@ -178,15 +178,21 @@ footer {
                 }
                 input{
                     width: 50%;
-                    border-radius: 5px;
+                    border-radius: 8px 00 0 8px;
                     // padding: 5px 12px 5px 12px;
+                    border: none;
+                    :focus {
+                        // outline: none !important;
+                        border: none;
+                    }
                 }
                 button{
-                    border-radius: 5px;
+                    border-radius:0 8px 8px 0;
                     outline: none;
                     padding: 5px 12px 5px 12px;
                     background-color: $btn;
                     color: $ptext2;
+                    border: none;
                 }
             }
         }
@@ -217,6 +223,7 @@ footer {
         display: flex;
         justify-content: space-around;
         padding-bottom: 15px;
+        color: $ptext2;
     }
 }
 

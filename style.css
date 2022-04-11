@@ -5,7 +5,13 @@
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (min-width: 768px) {
+  .sn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .dn {
     display: none;
   }
@@ -56,6 +62,12 @@
 @media screen and (min-width: 1200px) {
   .texts {
     font-size: 54px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .cpy {
+    font-size: small;
   }
 }
 
@@ -242,15 +254,21 @@ footer .newsletter .enter form label {
 
 footer .newsletter .enter form input {
   width: 50%;
-  border-radius: 5px;
+  border-radius: 8px 00 0 8px;
+  border: none;
+}
+
+footer .newsletter .enter form input :focus {
+  border: none;
 }
 
 footer .newsletter .enter form button {
-  border-radius: 5px;
+  border-radius: 0 8px 8px 0;
   outline: none;
   padding: 5px 12px 5px 12px;
   background-color: #000000;
   color: #FFFFFF;
+  border: none;
 }
 
 footer .ftext p {
@@ -286,6 +304,7 @@ footer .Copyright {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-bottom: 15px;
+  color: #FFFFFF;
 }
 
 .wealth, .wealth2, .wealth3 {

@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
-@media screen and(max-width:520px) {
-    .dn {
+@media screen and(min-width:768px) {
+    .sn {
         display: none;
     }
 }
+@media screen and(max-width:767px) {
+    .dn {
+        display: none
+    }
+}
+
 .texts {
     font-size: 33px !important;
     @media screen and (min-width: 360px) {
@@ -33,5 +39,10 @@
     }
     @media screen and (min-width: 1200px) {
         font-size: 54px !important;
+    }
+}
+@media screen and (max-width:420px) {
+    .cpy{
+        font-size: small;
     }
 }
