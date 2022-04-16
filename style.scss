@@ -279,31 +279,36 @@ footer {
 }
 // table
 .container > div{
-    background-color: $bg1;
+    background-color: $ptext2;
     margin: auto;
-    padding: 20px 10px 20px 10px  ;
+    padding: 20px 20px 20px 20px  ;
     // padding-bottom: 20px;
 }
 table{
     border-collapse: collapse;
     box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.12);
-    border-radius: 10px 10px 0 0 !important;
+    border-radius: 0 0 10px 10px  !important;
     
     thead{
       th {
           text-align: center;
           border-radius: 10px 10px 0 0;
-          background-color: $cardcolor !important;
+          background-color: $tablecolor !important;
+          color: $ptext2;
       }
     }
         th {
-            background-color: #4CAF50;   
+            background-color: $tablecolor;   
     }
     td{
         text-align: center;
         padding: 10px;
     }
-    tr:nth-child(even) {background-color: $cardcolor;
+    tr:nth-child(odd) {
+border-right: 2px solid green;
+    }
+    tr:nth-child(even) {
+        background-color: $tablecolor;
         color: $ptext2;
     }
     .tablelast{
