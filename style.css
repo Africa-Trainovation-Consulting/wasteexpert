@@ -136,9 +136,10 @@ header {
 }
 
 .imgs {
-  background-image: url(/Asset/img/Recbg1.svg);
+  background-image: url(/Asset/img/Recbg2.svg);
   background-repeat: no-repeat;
-  background-position-x: 227px;
+  background-position-x: inherit;
+  background-position-y: center;
 }
 
 .AboutUs {
@@ -363,5 +364,42 @@ footer .Copyright {
 
 .Sectiontable .tt {
   overflow-x: scroll;
+}
+
+.container > div {
+  background-color: #EEEEEE;
+  margin: auto;
+  padding: 20px 10px 20px 10px;
+}
+
+table {
+  border-collapse: collapse;
+  -webkit-box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 10px 10px 0 0 !important;
+}
+
+table thead th {
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  background-color: #08BD46B2 !important;
+}
+
+table th {
+  background-color: #4CAF50;
+}
+
+table td {
+  text-align: center;
+  padding: 10px;
+}
+
+table tr:nth-child(even) {
+  background-color: #08BD46B2;
+  color: #FFFFFF;
+}
+
+table .tablelast {
+  border-radius: 0 0 10px 10px !important;
 }
 /*# sourceMappingURL=style.css.map */

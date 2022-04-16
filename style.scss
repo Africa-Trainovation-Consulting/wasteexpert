@@ -56,9 +56,11 @@ header {
     }
 }
 .imgs{
-    background-image: url(/Asset/img/Recbg1.svg);
+    background-image: url(/Asset/img/Recbg2.svg);
     background-repeat: no-repeat;
-    background-position-x: 227px;
+    // background-position-x: 227px;
+    background-position-x: inherit;
+    background-position-y: center
 }
 
 .AboutUs {
@@ -273,5 +275,39 @@ footer {
 .Sectiontable{
     .tt{
         overflow-x: scroll;
+    }
+}
+// table
+.container > div{
+    background-color: $bg1;
+    margin: auto;
+    padding: 20px 10px 20px 10px  ;
+    // padding-bottom: 20px;
+}
+table{
+    border-collapse: collapse;
+    box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 10px 10px 0 0 !important;
+    
+    thead{
+      th {
+          text-align: center;
+          border-radius: 10px 10px 0 0;
+          background-color: $cardcolor !important;
+      }
+    }
+        th {
+            background-color: #4CAF50;   
+    }
+    td{
+        text-align: center;
+        padding: 10px;
+    }
+    tr:nth-child(even) {background-color: $cardcolor;
+        color: $ptext2;
+    }
+    .tablelast{
+        border-radius: 0 0 10px 10px !important;
+        
     }
 }
