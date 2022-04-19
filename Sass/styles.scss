@@ -1,7 +1,33 @@
 @import "./variables";
+@mixin greenbutton {
+  // text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  background-color: $mainColor;
+  color: white;
+  // padding: 10px 15px;
+  font-family: $formfont;
+  width: 200px;
+  height: 55px;
+  font-size: 18px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.23);
+}
+@mixin blackbutton {
+  // text-decoration: none;
+  color: white;
+  border: none;
+  background-color: #000;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  height: 55px;
+  // padding: 10px 20px;
+  font-family: $myfont;
+}
 // * {
 //   padding: 0;
 //   margin: 0;
+//   overflow: hidden;
 // }
 body {
   font-family: $formfont;
@@ -454,7 +480,7 @@ body {
       margin-bottom: 30px;
     }
     img {
-      padding-top: 40px;
+      padding-top: 75px;
     }
   }
   .secondSection {
@@ -508,7 +534,9 @@ body {
       color: $mainColor;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       background: rgba(154, 153, 153, 0.08);
-      //  border-radius: 6px;
+      @media screen and (max-width: $width) {
+        font-size: 20px;
+      }
     }
     .accordion-item {
       //   font-weight: 600;
@@ -533,6 +561,9 @@ body {
       line-height: 110.02%;
       color: $mainColor;
       padding-top: 60px;
+      @media screen and (max-width: $width) {
+        font-size: 28px;
+      }
     }
     p {
       font-weight: 400;
@@ -558,12 +589,113 @@ body {
   footer {
     padding-top: 90px;
     background-color: $mainColor;
-    .col-md-6:first-child {
-      @media screen and (max-width: $width){
+    .none {
+      @media screen and (max-width: $width) {
+        display: none;
+      }
+    }
+    .shownot {
+      display: none;
+      @media screen and (max-width: $width) {
+        display: block;
+      }
+      .col-md-12:first-child {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        p {
+          color: #fff;
+          font-size: 20px;
+          font-family: $myfont;
+          padding-top: 10px;
+        }
       }
+      .col-md-12:nth-child(2) {
+        p {
+          font-weight: 400;
+          color: #fff;
+          font-size: 17px;
+          text-align: justify;
+          line-height: 210%;
+        }
+      }
+      .col-md-12:nth-child(3) {
+        label {
+          padding-top: 50px;
+          font-size: 18px;
+          line-height: 155%;
+          color: #fff;
+          font-family: $formfont;
+        }
+
+        input {
+          width: -webkit-fill-available;
+          height: 40px;
+          padding: 0px 10px;
+          border-radius: 8px 0 0 8px;
+          border: none;
+
+          outline: none;
+          ::placeholder {
+            color: rgba(0, 0, 0, 0.36);
+            :focus {
+              outline: none;
+            }
+          }
+        }
+        button {
+          background-color: #000;
+          width: 101px;
+          height: 40px;
+          border-radius: 0 8px 8px 0;
+          border: none;
+          margin-right: 5px;
+          a {
+            color: white;
+            font-size: 18px;
+            font-family: $formfont;
+            text-decoration: none;
+            @media screen and (max-width: 348px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      li {
+        list-style: none;
+        text-align: center;
+
+        font-weight: normal;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 19px;
+          line-height: 40px;
+        }
+      }
+      li:first-child {
+        padding-top: 80px;
+      }
+      .icons {
+        display: flex;
+
+        justify-content: center;
+        margin-bottom: 40px;
+
+        div:not(:last-child) {
+          margin-right: 10%;
+        }
+      }
+      div:last-child {
+        color: white;
+        font-family: $formfont;
+        font-size: 10px;
+        line-height: 150.5%;
+        text-align: center;
+      }
+    }
+    .col-md-6:first-child {
       p {
         color: #fff;
         font-size: 20px;
@@ -608,82 +740,310 @@ body {
           text-decoration: none;
         }
       }
-      @media screen and (max-width: $width){
-        display: none;
-      }
     }
-    .row:nth-child(2){
+    .row:nth-child(2) {
       font-family: $formfont;
       padding-top: 50px;
       padding-bottom: 60px;
-      @media screen and (max-width: $width){
-        .none{
-          display: none
+      // @media screen and (max-width: $width) {
+      //   .none {
+      //     display: none;
+      //   }
+      // }
+
+      .col-md-4 {
+        p {
+          font-weight: 400;
+          color: #fff;
+          font-size: 17px;
+
+          line-height: 155%;
+          // @media screen and (max-width: $width) {
+          //   line-height: 210%;
+          // }
         }
-
+        // @media screen and (max-width: $width) {
+        //   text-align: center;
+        // }
       }
-  
-    .col-md-4{
-      p{
 
-        font-weight: 400;
-        color: #fff;
-  font-size: 17px;
-  
-  line-height: 155%;
-    @media screen and (max-width: $width){
-      line-height: 210%;
-    }
-  
-      }
-      @media screen and (max-width: $width){
-        text-align: center;
-      }
-    }
-   
-      li{
-
+      li {
         list-style: none;
         color: #fff;
         font-size: 17px;
-       
+
         line-height: 40px;
         font-weight: normal;
-          @media screen and (max-width: $width){
-            font-size: 19px;
-            line-height: 60px;
-          }
+        // @media screen and (max-width: $width) {
+        //   font-size: 19px;
+        //   line-height: 60px;
+        // }
       }
-      ul{
-
-        li:first-child{
+      ul {
+        li:first-child {
           font-size: 22px;
-            @media screen and (max-width: $width){
-              font-size: 19px;
-            }
+          // @media screen and (max-width: $width) {
+          //   font-size: 19px;
+          // }
         }
       }
-      .shownot{
-        display: none;
-        font-size: 18px;
-        text-align: center;
-        line-height: 30px;
-        
-        a{
-          text-decoration: none;
-          color: white;
-        }
-        
-          @media screen and (max-width: $width){
-            display: block;
-          }
-        
-      }
-  
-      }
-      hr{
+    }
+    hr {
+      color: white;
+    }
+    .copyright {
+      div:first-child {
         color: white;
-        
+        font-family: $formfont;
       }
+      .icons {
+        display: flex;
+
+        gap: 15px;
+      }
+    }
+  }
+
+  /*--------- Styling for the Contact Us Page -----*/
+  .contactForm {
+    font-family: $formfont;
+    .col-md-5 {
+      padding: {
+        top: 150px;
+        bottom: 150px;
+      }
+      @media screen and (max-width: $width) {
+        padding-bottom: 80px;
+      }
+
+      h3 {
+        margin-left: 30px;
+        font-size: 22px;
+        line-height: 231.5%;
+        text-transform: uppercase;
+        color: white;
+        background-color: $mainColor;
+        width: 230px;
+        text-align: center;
+        margin-bottom: 20px;
+        @media screen and (max-width: $width) {
+          font-size: 19px;
+          width: 184px;
+        }
+      }
+      .schedule {
+        font-size: 22px;
+        line-height: 20px;
+        margin-left: 38px;
+        @media screen and (max-width: $width) {
+          font-size: 19px;
+        }
+
+        p {
+          color: $mainColor;
+        }
+        p:nth-child(2) {
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin-bottom: 40px;
+        p {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 22px;
+          @media screen and (max-width: $width) {
+            font-size: 19px;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+    .col-md-7 {
+      border: 1px solid $formColor;
+      margin-top: 50px;
+      margin-bottom: 80px;
+
+      padding: 30px;
+
+      textarea {
+        border: 1px solid $formColor;
+      }
+      textarea:focus {
+        border: 1px solid $formColor;
+        box-shadow: none;
+      }
+      h3 {
+        font-size: 22px;
+        color: $mainColor;
+        // font-weight: 400;
+      }
+    }
+  }
+
+  /*--------- Styling for the Pick Up Page -----*/
+  .SectionOne {
+    .row {
+      .col-lg-6:first-child {
+        padding-top: 50px;
+
+        p {
+          font-size: 17px;
+          line-height: 140%;
+          color: $mainColor;
+          padding-top: 30px;
+          margin-bottom: 40px;
+          text-align: justify;
+          line-height: 140%;
+        }
+        p + div {
+          display: flex;
+          gap: 40px;
+          @media screen and (max-width: 499px) {
+            gap: 25px;
+          }
+        }
+        button:first-child {
+          @include greenbutton;
+          @media screen and (max-width: 460px) {
+            @include greenbutton;
+
+            width: 130px;
+            height: 47px;
+            font-size: 15px;
+          }
+        }
+        a:nth-child(2) {
+          button {
+            @include blackbutton;
+            @media screen and (max-width: 460px) {
+              @include blackbutton;
+              width: 127px;
+              height: 47px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .col-lg-6:nth-child(2) {
+        img {
+          padding-top: 80px;
+        }
+      }
+    }
+  }
+  .SectionTwo {
+    .col-lg-7 {
+      padding-top: 100px;
+      @media screen and (max-width: $mywidth) {
+        order: 2;
+      }
+    }
+    .col-lg-5 {
+      padding-top: 100px;
+      @media screen and (max-width: $mywidth) {
+        order: 1;
+      }
+
+      button:first-child {
+        @include greenbutton;
+        @media screen and (max-width: 460px) {
+          @include greenbutton;
+
+          width: 130px;
+          height: 47px;
+          font-size: 15px;
+        }
+      }
+      a:nth-child(2) {
+        button {
+          @include blackbutton;
+          margin-bottom: 70px;
+          @media screen and (max-width: 460px) {
+            @include blackbutton;
+            width: 127px;
+            height: 47px;
+            font-size: 15px;
+          }
+        }
+      }
+      p {
+        font-size: 17px;
+        line-height: 140%;
+        color: $mainColor;
+        padding-top: 30px;
+        margin-bottom: 40px;
+        text-align: justify;
+        line-height: 140%;
+      }
+      p + div {
+        display: flex;
+        gap: 40px;
+      }
+    }
+  }
+  .SectionThree {
+    background-image: url(/Images/patternedBackground.svg);
+    background-color: #5bdb88;
+    // opacity: 0.7;
+    font-family: $formfont;
+
+    @media screen and (max-width: $mywidth) {
+      margin-top: 50px;
+    }
+
+    .row {
+      h2 {
+        color: $mainColor;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 140%;
+      }
+      .col-lg-4 {
+        @media screen and (max-width: $mywidth) {
+          margin-bottom: 40px;
+        }
+        .card {
+          border-radius: 8px;
+          padding: 0 15px;
+          margin-bottom: 50px;
+          h3 {
+            text-align: center;
+            color: $mainColor;
+            font-size: 22px;
+            line-height: 140%;
+          }
+          img {
+            display: flex;
+            align-self: center;
+            padding-top: 60px;
+            padding-bottom: 10px;
+          }
+        }
+
+        p {
+          font-size: 17px;
+          font-family: $formfont;
+          color: $mainColor;
+          padding-top: 20px;
+          margin-bottom: 40px;
+          text-align: justify;
+          line-height: 140%;
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          text-decoration: none;
+
+          button {
+            @include greenbutton;
+            // margin-bottom: 20px;
+          }
+        }
+      }
+    }
   }
 }
