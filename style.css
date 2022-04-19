@@ -366,12 +366,6 @@ footer .Copyright {
   overflow-x: scroll;
 }
 
-.container > div {
-  background-color: #FFFFFF;
-  margin: auto;
-  padding: 20px 20px 20px 20px;
-}
-
 table {
   border-collapse: collapse;
   -webkit-box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.12);
@@ -406,5 +400,10 @@ table tr:nth-child(even) {
 
 table .tablelast {
   border-radius: 0 0 10px 10px !important;
+}
+
+.contactUs h2 {
+  font-size: 60px;
+  color: #028C32;
 }
 /*# sourceMappingURL=style.css.map */

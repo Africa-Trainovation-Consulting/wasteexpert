@@ -278,12 +278,12 @@ footer {
     }
 }
 // table
-.container > div{
-    background-color: $ptext2;
-    margin: auto;
-    padding: 20px 20px 20px 20px  ;
-    // padding-bottom: 20px;
-}
+// .container > div{
+//     // background-color: $ptext2;
+//     margin: auto;
+//     padding: 20px 20px 20px 20px  ;
+//     // padding-bottom: 20px;
+// }
 table{
     border-collapse: collapse;
     box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.12);
@@ -314,5 +314,12 @@ border-right: 2px solid green;
     .tablelast{
         border-radius: 0 0 10px 10px !important;
         
+    }
+}
+
+.contactUs{
+    h2{
+        font-size: 60px;
+        color: $color1;
     }
 }
