@@ -1,6 +1,6 @@
 @import "./variables";
 @mixin greenbutton {
-  // text-decoration: none;
+
   border: none;
   border-radius: 6px;
   background-color: $mainColor;
@@ -13,7 +13,7 @@
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.23);
 }
 @mixin blackbutton {
-  // text-decoration: none;
+  
   color: white;
   border: none;
   background-color: #000;
@@ -25,8 +25,11 @@
   font-family: $myfont;
 }
 
+
 body {
   font-family: $formfont;
+    overflow-x: hidden;
+
 
   .misc {
     ::placeholder {
@@ -777,7 +780,7 @@ body {
   /*--------- Styling for the Contact Us Page -----*/
   .contactForm {
     font-family: $formfont;
-    .col-md-5 {
+    .col-lg-5 {
       padding: {
         top: 150px;
         bottom: 150px;
@@ -832,7 +835,7 @@ body {
         }
       }
     }
-    .col-md-7 {
+    .col-lg-7 {
       border: 1px solid $formColor;
       margin-top: 50px;
       margin-bottom: 80px;
