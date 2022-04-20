@@ -709,175 +709,27 @@ body footer {
   background-color: #028C32;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
   body footer .none {
     display: none;
   }
 }
 
-body footer .shownot {
-  display: none;
-}
-
-@media screen and (max-width: 900px) {
-  body footer .shownot {
-    display: block;
-  }
-}
-
-body footer .shownot .col-md-12:first-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body footer .shownot .col-md-12:first-child p {
+body footer .col-lg-6:first-child p {
   color: #fff;
   font-size: 20px;
   font-family: "Inter", sans-serif;
   padding-top: 10px;
 }
 
-body footer .shownot .col-md-12:nth-child(2) p {
-  font-weight: 400;
-  color: #fff;
-  font-size: 17px;
-  text-align: justify;
-  line-height: 210%;
-}
-
-body footer .shownot .col-md-12:nth-child(3) label {
-  padding-top: 50px;
+body footer .col-lg-6:nth-child(2) label {
   font-size: 18px;
   line-height: 155%;
   color: #fff;
   font-family: "Mulish", sans-serif;
 }
 
-body footer .shownot .col-md-12:nth-child(3) input {
-  width: -webkit-fill-available;
-  height: 40px;
-  padding: 0px 10px;
-  border-radius: 8px 0 0 8px;
-  border: none;
-  outline: none;
-}
-
-body footer .shownot .col-md-12:nth-child(3) input ::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.36);
-}
-
-body footer .shownot .col-md-12:nth-child(3) input :-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.36);
-}
-
-body footer .shownot .col-md-12:nth-child(3) input ::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.36);
-}
-
-body footer .shownot .col-md-12:nth-child(3) input ::placeholder {
-  color: rgba(0, 0, 0, 0.36);
-}
-
-body footer .shownot .col-md-12:nth-child(3) input ::-webkit-input-placeholder :focus {
-  outline: none;
-}
-
-body footer .shownot .col-md-12:nth-child(3) input :-ms-input-placeholder :focus {
-  outline: none;
-}
-
-body footer .shownot .col-md-12:nth-child(3) input ::-ms-input-placeholder :focus {
-  outline: none;
-}
-
-body footer .shownot .col-md-12:nth-child(3) input ::placeholder :focus {
-  outline: none;
-}
-
-body footer .shownot .col-md-12:nth-child(3) button {
-  background-color: #000;
-  width: 101px;
-  height: 40px;
-  border-radius: 0 8px 8px 0;
-  border: none;
-  margin-right: 5px;
-}
-
-body footer .shownot .col-md-12:nth-child(3) button a {
-  color: white;
-  font-size: 18px;
-  font-family: "Mulish", sans-serif;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 348px) {
-  body footer .shownot .col-md-12:nth-child(3) button a {
-    font-size: 14px;
-  }
-}
-
-body footer .shownot li {
-  list-style: none;
-  text-align: center;
-  font-weight: normal;
-}
-
-body footer .shownot li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 19px;
-  line-height: 40px;
-}
-
-body footer .shownot li:first-child {
-  padding-top: 80px;
-}
-
-body footer .shownot .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 40px;
-}
-
-body footer .shownot .icons div:not(:last-child) {
-  margin-right: 10%;
-}
-
-body footer .shownot div:last-child {
-  color: white;
-  font-family: "Mulish", sans-serif;
-  font-size: 10px;
-  line-height: 150.5%;
-  text-align: center;
-}
-
-body footer .col-md-6:first-child p {
-  color: #fff;
-  font-size: 20px;
-  font-family: "Inter", sans-serif;
-  padding-top: 10px;
-}
-
-body footer .col-md-6:nth-child(2) label {
-  font-size: 18px;
-  line-height: 155%;
-  color: #fff;
-  font-family: "Mulish", sans-serif;
-}
-
-body footer .col-md-6:nth-child(2) input {
+body footer .col-lg-6:nth-child(2) input {
   width: 470px;
   height: 50px;
   padding: 0px 10px;
@@ -886,39 +738,39 @@ body footer .col-md-6:nth-child(2) input {
   outline: none;
 }
 
-body footer .col-md-6:nth-child(2) input ::-webkit-input-placeholder {
+body footer .col-lg-6:nth-child(2) input ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.36);
 }
 
-body footer .col-md-6:nth-child(2) input :-ms-input-placeholder {
+body footer .col-lg-6:nth-child(2) input :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.36);
 }
 
-body footer .col-md-6:nth-child(2) input ::-ms-input-placeholder {
+body footer .col-lg-6:nth-child(2) input ::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.36);
 }
 
-body footer .col-md-6:nth-child(2) input ::placeholder {
+body footer .col-lg-6:nth-child(2) input ::placeholder {
   color: rgba(0, 0, 0, 0.36);
 }
 
-body footer .col-md-6:nth-child(2) input ::-webkit-input-placeholder :focus {
+body footer .col-lg-6:nth-child(2) input ::-webkit-input-placeholder :focus {
   outline: none;
 }
 
-body footer .col-md-6:nth-child(2) input :-ms-input-placeholder :focus {
+body footer .col-lg-6:nth-child(2) input :-ms-input-placeholder :focus {
   outline: none;
 }
 
-body footer .col-md-6:nth-child(2) input ::-ms-input-placeholder :focus {
+body footer .col-lg-6:nth-child(2) input ::-ms-input-placeholder :focus {
   outline: none;
 }
 
-body footer .col-md-6:nth-child(2) input ::placeholder :focus {
+body footer .col-lg-6:nth-child(2) input ::placeholder :focus {
   outline: none;
 }
 
-body footer .col-md-6:nth-child(2) button {
+body footer .col-lg-6:nth-child(2) button {
   background-color: #000;
   width: 133px;
   height: 50px;
@@ -927,7 +779,7 @@ body footer .col-md-6:nth-child(2) button {
   margin-right: 5px;
 }
 
-body footer .col-md-6:nth-child(2) button a {
+body footer .col-lg-6:nth-child(2) button a {
   color: white;
   font-size: 18px;
   font-family: "Mulish", sans-serif;
@@ -940,7 +792,7 @@ body footer .row:nth-child(2) {
   padding-bottom: 60px;
 }
 
-body footer .row:nth-child(2) .col-md-4 p {
+body footer .row:nth-child(2) .col-lg-4 p {
   font-weight: 400;
   color: #fff;
   font-size: 17px;
@@ -973,6 +825,155 @@ body footer .copyright .icons {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+}
+
+body footer .shownot {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  body footer .shownot {
+    display: block;
+  }
+}
+
+body footer .shownot .col-lg-12:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .shownot .col-lg-12:first-child p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  padding-top: 10px;
+}
+
+body footer .shownot .col-lg-12:nth-child(2) p {
+  font-weight: 400;
+  color: #fff;
+  font-size: 17px;
+  text-align: justify;
+  line-height: 210%;
+}
+
+body footer .shownot .col-lg-12:nth-child(3) label {
+  padding-top: 50px;
+  font-size: 18px;
+  line-height: 155%;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+}
+
+body footer .shownot .col-lg-12:nth-child(3) input {
+  width: -webkit-fill-available;
+  height: 40px;
+  padding: 0px 10px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+}
+
+body footer .shownot .col-lg-12:nth-child(3) input ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.36);
+}
+
+body footer .shownot .col-lg-12:nth-child(3) input :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.36);
+}
+
+body footer .shownot .col-lg-12:nth-child(3) input ::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.36);
+}
+
+body footer .shownot .col-lg-12:nth-child(3) input ::placeholder {
+  color: rgba(0, 0, 0, 0.36);
+}
+
+body footer .shownot .col-lg-12:nth-child(3) input ::-webkit-input-placeholder :focus {
+  outline: none;
+}
+
+body footer .shownot .col-lg-12:nth-child(3) input :-ms-input-placeholder :focus {
+  outline: none;
+}
+
+body footer .shownot .col-lg-12:nth-child(3) input ::-ms-input-placeholder :focus {
+  outline: none;
+}
+
+body footer .shownot .col-lg-12:nth-child(3) input ::placeholder :focus {
+  outline: none;
+}
+
+body footer .shownot .col-lg-12:nth-child(3) button {
+  background-color: #000;
+  width: 101px;
+  height: 40px;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  margin-right: 5px;
+}
+
+body footer .shownot .col-lg-12:nth-child(3) button a {
+  color: white;
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 348px) {
+  body footer .shownot .col-lg-12:nth-child(3) button a {
+    font-size: 14px;
+  }
+}
+
+body footer .shownot li {
+  list-style: none;
+  text-align: center;
+  font-weight: normal;
+}
+
+body footer .shownot li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 21px;
+  line-height: 40px;
+}
+
+body footer .shownot li:first-child {
+  padding-top: 80px;
+}
+
+body footer .shownot .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+body footer .shownot .icons div:not(:last-child) {
+  margin-right: 10%;
+}
+
+body footer .shownot div:last-child {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 150.5%;
+  text-align: center;
 }
 
 body .contactForm {
