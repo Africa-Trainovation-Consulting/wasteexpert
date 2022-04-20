@@ -1,5 +1,6 @@
 body {
   font-family: "Mulish", sans-serif;
+  /*--------- Styling for the FAQ Page -----*/
   /*--------- Styling for the Contact Us Page -----*/
   /*--------- Styling for the Pick Up Page -----*/
 }
@@ -557,27 +558,25 @@ body .firstSection p {
   color: rgba(0, 0, 0, 0.8);
   font-family: "Mulish", sans-serif;
   font-size: 18px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 body .firstSection button {
-  color: #028C32;
-  background-color: #028C32;
-  padding: 10px 50px;
-  border: 1px solid #028C32;
+  border: none;
   border-radius: 6px;
+  background-color: #028C32;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  width: 200px;
+  height: 55px;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.23);
   margin-bottom: 30px;
 }
 
-body .firstSection button a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-}
-
 body .firstSection img {
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
 body .secondSection {
@@ -602,6 +601,7 @@ body .secondSection p {
   color: #676b69;
   line-height: 25px;
   font-family: "Mulish", sans-serif;
+  font-size: 18px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -689,19 +689,18 @@ body .lastSection p {
 }
 
 body .lastSection button {
-  color: #028C32;
-  background-color: #028C32;
-  padding: 10px 50px;
-  border: 1px solid #028C32;
+  border: none;
   border-radius: 6px;
+  background-color: #028C32;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  width: 200px;
+  height: 55px;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.23);
   margin-top: 30px;
   margin-bottom: 70px;
-}
-
-body .lastSection button a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
 }
 
 body footer {
@@ -1347,5 +1346,6 @@ body .SectionThree .row .col-lg-4 a button {
   font-size: 18px;
   -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.23);
           box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.23);
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

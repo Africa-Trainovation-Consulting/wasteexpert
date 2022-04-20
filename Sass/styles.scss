@@ -5,7 +5,7 @@
   border-radius: 6px;
   background-color: $mainColor;
   color: white;
-  // padding: 10px 15px;
+  
   font-family: $formfont;
   width: 200px;
   height: 55px;
@@ -21,14 +21,10 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 200px;
   height: 55px;
-  // padding: 10px 20px;
+  
   font-family: $myfont;
 }
-// * {
-//   padding: 0;
-//   margin: 0;
-//   overflow: hidden;
-// }
+
 body {
   font-family: $formfont;
 
@@ -376,6 +372,7 @@ body {
     }
   }
 
+ /*--------- Styling for the FAQ Page -----*/
   nav {
     background: linear-gradient(0deg, #ffffff, #ffffff),
       linear-gradient(90.01deg, #08bd46 0.84%, rgba(44, 255, 204, 0) 194.85%);
@@ -440,6 +437,8 @@ body {
 
   .firstSection {
     background: #eeeeee;
+    
+     
 
     .col-lg-5 {
       padding-top: 85px;
@@ -461,26 +460,20 @@ body {
       color: rgba(0, 0, 0, 0.8);
       font-family: $formfont;
       font-size: 18px;
-      padding: {
-        top: 30px;
-        bottom: 30px;
-      }
+      padding-bottom: 25px;
+      
     }
-    button {
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-      }
-      color: $mainColor;
-      background-color: $mainColor;
-      padding: 10px 50px;
-      border: 1px solid $mainColor;
-      border-radius: 6px;
-      margin-bottom: 30px;
-    }
+  
+      button {
+          @include greenbutton;
+           margin-bottom: 30px;
+       
+        }
+
+      
+
     img {
-      padding-top: 75px;
+      padding-top: 50px;
     }
   }
   .secondSection {
@@ -501,7 +494,7 @@ body {
       color: #676b69;
       line-height: 25px;
       font-family: $formfont;
-      //   font-size: 16px;
+        font-size: 18px;
       padding: {
         top: 30px;
         bottom: 30px;
@@ -571,20 +564,13 @@ body {
       line-height: 140.02%;
       color: rgba(0, 0, 0, 0.61);
     }
-    button {
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 18px;
-      }
-      color: $mainColor;
-      background-color: $mainColor;
-      padding: 10px 50px;
-      border: 1px solid $mainColor;
-      border-radius: 6px;
-      margin-top: 30px;
-      margin-bottom: 70px;
-    }
+   
+      button {
+          @include greenbutton;
+           margin-top: 30px;
+           margin-bottom: 70px;
+       
+        }
   }
   footer {
     padding-top: 90px;
@@ -1024,7 +1010,7 @@ body {
 
           button {
             @include greenbutton;
-            // margin-bottom: 20px;
+            margin-bottom: 20px;
           }
         }
       }
