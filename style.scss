@@ -45,7 +45,7 @@ header {
         background-color: $color1;
         color: $ptext2;
         outline: none !important;
-        padding: 5px 30px 5px 30px;
+        padding: 10px 45px 10px 45px;
         &:focus {
             box-shadow: none;
         }
@@ -55,12 +55,12 @@ header {
         }
     }
 }
-.imgs{
+.imgs {
     background-image: url(/Asset/img/Recbg2.svg);
     background-repeat: no-repeat;
     // background-position-x: 227px;
     background-position-x: inherit;
-    background-position-y: center
+    background-position-y: center;
 }
 
 .AboutUs {
@@ -68,12 +68,11 @@ header {
     h2 {
         color: $color1;
         position: relative;
-        span{
+        span {
             position: absolute;
             top: 50%;
             left: 0;
         }
-      
     }
     p {
         color: $color1;
@@ -94,12 +93,11 @@ header {
     h2 {
         color: $color1;
         position: relative;
-        span{
+        span {
             position: absolute;
             top: 50%;
             left: 0;
         }
-     
     }
     p {
         color: $color1;
@@ -110,13 +108,11 @@ header {
     h2 {
         color: $color1;
         position: relative;
-        span{
+        span {
             position: absolute;
             top: 50%;
             left: 0;
         }
-     
-     
     }
     p {
         color: $color1;
@@ -157,29 +153,29 @@ footer {
             // padding-right: 20vw;
             // text-align: right;
             // margin-right: -4vw;
-           
-            form{
-                label{
+
+            form {
+                label {
                     text-align: center;
                     font-size: 18px;
                     line-height: 155%;
                     color: $ptext2;
-                    @media screen and(min-width:768px){
+                    @media screen and(min-width:768px) {
                         width: 90%;
                     }
-                    @media screen and(min-width:992px){
+                    @media screen and(min-width:992px) {
                         width: 80%;
                     }
                 }
-                span{
-                    @media screen and (min-width:768px){
+                span {
+                    @media screen and (min-width: 768px) {
                         justify-content: center;
                     }
-                    @media screen and (min-width:992px){
+                    @media screen and (min-width: 992px) {
                         justify-content: center;
                     }
                 }
-                input{
+                input {
                     width: 50%;
                     border-radius: 8px 00 0 8px;
                     // padding: 5px 12px 5px 12px;
@@ -189,8 +185,8 @@ footer {
                         border: none;
                     }
                 }
-                button{
-                    border-radius:0 8px 8px 0;
+                button {
+                    border-radius: 0 8px 8px 0;
                     outline: none;
                     padding: 5px 12px 5px 12px;
                     background-color: $btn;
@@ -200,14 +196,14 @@ footer {
             }
         }
     }
-    .ftext{
-        p{
+    .ftext {
+        p {
             justify-content: center;
             text-align: justify;
-            color: $ptext2;  
+            color: $ptext2;
         }
     }
-    ul{
+    ul {
         text-align: justify;
         li {
             list-style: none;
@@ -217,12 +213,11 @@ footer {
                 text-align: center;
             }
         }
-
     }
-    hr{
+    hr {
         color: $ptext2;
     }
-    .Copyright{
+    .Copyright {
         display: flex;
         justify-content: space-around;
         padding-bottom: 15px;
@@ -232,48 +227,47 @@ footer {
 
 //Index2 styles
 
-.wealth{
+.wealth {
     background-image: url(/Asset/img/bg10.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    h5{
+    h5 {
         color: $color1;
         font-size: 60px;
         padding-top: 6vh;
     }
-    p{
+    p {
         color: $btn;
     }
 }
-.wealth2{
+.wealth2 {
     background-image: url(/Asset/img/bg11.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    @extend .wealth
+    @extend .wealth;
 }
-.wealth3{
+.wealth3 {
     background-image: url(/Asset/img/bg12.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    @extend .wealth
-
+    @extend .wealth;
 }
 
-.treasure{
-    h4{
+.treasure {
+    h4 {
         color: $color1;
-    text-align: center;
-    padding-top: 5vh;
+        text-align: center;
+        padding-top: 5vh;
     }
 }
-.card-group{
-    .card{
+.card-group {
+    .card {
         background-color: $cardcolor;
     }
 }
 
-.Sectiontable{
-    .tt{
+.Sectiontable {
+    .tt {
         overflow-x: scroll;
     }
 }
@@ -284,42 +278,110 @@ footer {
 //     padding: 20px 20px 20px 20px  ;
 //     // padding-bottom: 20px;
 // }
-table{
+table {
     border-collapse: collapse;
     box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.12);
-    border-radius: 0 0 10px 10px  !important;
-    
-    thead{
-      th {
-          text-align: center;
-          border-radius: 10px 10px 0 0;
-          background-color: $tablecolor !important;
-          color: $ptext2;
-      }
-    }
+    border-radius: 0 0 10px 10px !important;
+
+    thead {
         th {
-            background-color: $tablecolor;   
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+            background-color: $tablecolor !important;
+            color: $ptext2;
+        }
     }
-    td{
+    th {
+        background-color: $tablecolor;
+    }
+    td {
         text-align: center;
         padding: 10px;
     }
     tr:nth-child(odd) {
-border-right: 2px solid green;
+        border-right: 2px solid green;
     }
     tr:nth-child(even) {
         background-color: $tablecolor;
         color: $ptext2;
     }
-    .tablelast{
+    .tablelast {
         border-radius: 0 0 10px 10px !important;
-        
     }
 }
 
-.contactUs{
-    h2{
+.contactUs {
+    background: linear-gradient( to right top,  #ffffff 50%,#90e7b19c);
+    h2 {
         font-size: 60px;
         color: $color1;
     }
+}
+.address1{
+    h3{
+        font-size: medium;
+        text-transform: uppercase;
+        background-color: $color1;
+        display: inline;
+        color: #ffffff;
+        padding: 5px 15px;
+    }
+    p{
+        padding-top: 10px;
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 600;
+        
+        i{
+            color: $color1 !important;
+        }
+        img{
+            padding-right: 15px;
+        }
+    }
+}
+.contactform{
+    border: 1px solid $color1;
+    margin-top: 4em !important;
+    
+    p{
+        padding-top: 4em;
+        color: $color1;
+        font-weight: 600;
+        padding-left: 20px !important;
+    }
+    form{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        .form-label{
+            font-weight: 600;
+            
+        }
+    }
+    .btn{
+       background-color: $color1;
+       color: #ffffff;
+       border-radius: 10px;
+    }
+}
+
+.flipIt{
+    border-bottom: 30px solid $color1;
+    h2 {
+        color: $color1;
+        position: relative;
+        span {
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+    }
+    p {
+        color: $color1;
+        text-align: justify;
+    }
+}
+h3{
+    text-align: center;
+    color: $color1;
+    display: block;
 }

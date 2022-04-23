@@ -122,7 +122,7 @@ header {
   background-color: #028C32;
   color: #FFFFFF;
   outline: none !important;
-  padding: 5px 30px 5px 30px;
+  padding: 10px 45px 10px 45px;
 }
 
 .navbar .btn:focus {
@@ -370,7 +370,7 @@ table {
   border-collapse: collapse;
   -webkit-box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.12);
-  border-radius: 0 0 10px 10px  !important;
+  border-radius: 0 0 10px 10px !important;
 }
 
 table thead th {
@@ -402,8 +402,89 @@ table .tablelast {
   border-radius: 0 0 10px 10px !important;
 }
 
+.contactUs {
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #ffffff), to(#90e7b19c));
+  background: linear-gradient(to right top, #ffffff 50%, #90e7b19c);
+}
+
 .contactUs h2 {
   font-size: 60px;
   color: #028C32;
+}
+
+.address1 h3 {
+  font-size: medium;
+  text-transform: uppercase;
+  background-color: #028C32;
+  display: inline;
+  color: #ffffff;
+  padding: 5px 15px;
+}
+
+.address1 p {
+  padding-top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.address1 p i {
+  color: #028C32 !important;
+}
+
+.address1 p img {
+  padding-right: 15px;
+}
+
+.contactform {
+  border: 1px solid #028C32;
+  margin-top: 4em !important;
+}
+
+.contactform p {
+  padding-top: 4em;
+  color: #028C32;
+  font-weight: 600;
+  padding-left: 20px !important;
+}
+
+.contactform form {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.contactform form .form-label {
+  font-weight: 600;
+}
+
+.contactform .btn {
+  background-color: #028C32;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.flipIt {
+  border-bottom: 30px solid #028C32;
+}
+
+.flipIt h2 {
+  color: #028C32;
+  position: relative;
+}
+
+.flipIt h2 span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.flipIt p {
+  color: #028C32;
+  text-align: justify;
+}
+
+h3 {
+  text-align: center;
+  color: #028C32;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
