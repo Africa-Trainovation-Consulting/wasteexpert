@@ -487,4 +487,40 @@ h3 {
   color: #028C32;
   display: block;
 }
+
+.track .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.track .container .arrow {
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+}
+
+.track .container .chart {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.track .img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.track .img-responsive button {
+  background-color: black;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1em 2em;
+  border-radius: 2em;
+}
+
+.track .img-responsive button:hover {
+  background-color: red;
+  color: #FFFFFF;
+}
 /*# sourceMappingURL=style.css.map */

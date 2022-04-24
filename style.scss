@@ -385,3 +385,32 @@ h3{
     color: $color1;
     display: block;
 }
+.track{
+    .container{
+        display: flex;
+        justify-content: space-around;
+        .arrow{
+            transform: translateY(40%);
+            // transform: translateX(19%);
+        }
+        .chart{
+            transform: translateY(-15%);
+
+        }
+    }
+    .img-responsive{
+        width: 100%;
+        height: auto;
+        button{
+            background-color: black;
+            color: $ptext2;
+            text-align: center;
+            padding: 1em 2em;
+            border-radius: 2em;
+            &:hover{
+                background-color: red;
+                color: $ptext2;
+            }
+        }
+    }
+}
