@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and(min-width:768px) {
+    .sn {
+        display: none;
+    }
+}
+@media screen and(max-width:767px) {
+    .dn {
+        display: none
+    }
+}
+
+.texts {
+    font-size: 33px !important;
+    @media screen and (min-width: 360px) {
+        width: 84%;
+    }
+    @media screen and (min-width: 424px) {
+        font-size: 40px !important;
+        width: 87%;
+    }
+    @media screen and (min-width: 497px) {
+        font-size: 48px !important;
+    }
+    @media screen and (min-width: 576px) {
+        width: 100%;
+        font-size: 27px !important;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 35px !important;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 45px !important;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 54px !important;
+    }
+}
+@media screen and (max-width:420px) {
+    .cpy{
+        font-size: small;
+    }
+}
