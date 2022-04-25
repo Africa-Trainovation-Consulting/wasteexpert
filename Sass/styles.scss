@@ -109,6 +109,7 @@ body {
   }
 
   .LoginContainer {
+   
     button {
       border: none;
       border-radius: 8px;
@@ -146,6 +147,12 @@ body {
     input:focus {
       border: 1px solid $formColor;
       box-shadow: none;
+    }
+    .forgot {
+      a{
+        text-decoration: none !important;
+        color: #000;
+      }
     }
   }
 

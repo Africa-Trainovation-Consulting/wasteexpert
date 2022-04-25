@@ -156,6 +156,11 @@ body .LoginContainer input:focus {
           box-shadow: none;
 }
 
+body .LoginContainer .forgot a {
+  text-decoration: none !important;
+  color: #000;
+}
+
 body .SellWasteContainer button {
   border: none;
   border-radius: 8px;
