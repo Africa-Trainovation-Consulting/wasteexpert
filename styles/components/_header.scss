@@ -1,0 +1,64 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 10vw !important;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    margin: 0 !important;
+    .navBtn{
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+        a{
+            margin-right: 12px;
+            text-decoration: none;
+            color: green;
+        }
+    }
+    .navbutton{
+        @media screen and (max-width: 800px) {
+            display: block;
+        }
+        display: none;
+    }
+    .search{
+        @media screen and (min-width: 800px) {
+            display: none !important;
+        }
+        @media screen and (max-width: 425px) {
+            display: none !important;
+        }
+    }
+}
+
+aside{
+    background-color: #028C32;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 1em;
+    width: 5vw;
+    height: 100vh;
+    display: none;
+     ul{
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.4em;
+    }
+}
+
+#closeBtn{
+    display: none;
+}
