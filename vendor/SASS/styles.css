@@ -1162,6 +1162,10 @@ body .SectionOne .row .col-lg-6:first-child a:nth-child(2) button {
   }
 }
 
+body .SectionOne .row .col-lg-6:first-child a:nth-child(2) button:hover {
+  background-color: #FF0000;
+}
+
 body .SectionOne .row .col-lg-6:nth-child(2) img {
   padding-top: 80px;
 }

@@ -1,5 +1,5 @@
-@import "../variables";
-@import "../classes";
+@import "./classes";
+@import "./variables1";
 
 .head {
     box-shadow: $shadow;
@@ -53,6 +53,7 @@
             span {
                 color: $primarycolor;
                 font-size: 22px;
+                
                 padding-left: 1vw;
                 @media screen and (max-width: 992px) {
                     display: none;
@@ -189,6 +190,7 @@
         border: 1px solid $secondarycolor;
         box-shadow: 0px 4px 4px $secondarycolor;
     }
+    
     .imgboy {
         padding-top: 70px;
         width: 800px;
@@ -251,9 +253,16 @@
             border: 1px solid $secondarycolor;
             box-shadow: 0px 4px 4px $secondarycolor;
             margin-bottom: 3vh;
+            &:hover{
+            background-color: #FF0000;
+                
+            }
+        }
+        // .btn2:hover {
+            // background-color: #FF0000;
         }
     }
-}
+
 
 .section2 {
     background-color: $color1;
