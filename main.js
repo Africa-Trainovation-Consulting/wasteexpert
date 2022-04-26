@@ -1,10 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+// <<<<<<< HEAD
+// <<<<<<< HEAD
 document.getElementById("bar").onclick = function () {
     document.getElementById("nav").classList.toggle("show")
     document.getElementById("icon").classList.toggle("fa-times")
-=======
-=======
+// =======
+// =======
 document.getElementById('hamburger').onclick = function () {
     document.getElementById("hamburger").classList.toggle("fa-times")
     // document.getElementById('nav').classList.toggle("show")
@@ -16,7 +16,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   wrap: false
 })
 
->>>>>>> walexy
+// >>>>>>> walexy
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   "use strict";
@@ -41,14 +41,14 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   });
 })();
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 //  changeicon = (icon) => icon.classList.toggle("fa-times");
 //   Another method for the toggle 
 document.getElementById('icon').onclick = function(){
   document.getElementById('icon').classList.toggle('fa-times')
->>>>>>> bunmi
+// >>>>>>> bunmi
 }
-=======
+// =======
 
 // // Example starter JavaScript for disabling form submissions if there are invalid fields
 // (function () {
@@ -70,4 +70,3 @@ document.getElementById('icon').onclick = function(){
 //       }, false)
 //     })
 // })()
->>>>>>> walexy
