@@ -7,7 +7,7 @@ header{
     top: 0;
     background-color: #fff;
     margin: 0 !important;
-    .navBtn{
+    #myDiv{
         @media screen and (max-width: 800px) {
             display: none;
         }
@@ -17,11 +17,18 @@ header{
         align-items: center;
         @media screen and (max-width: 800px) {
             display: none;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            // margin-top: 74px;
+            background-color: #fff;
         }
-        a{
+        li{
             margin-right: 12px;
-            text-decoration: none;
-            color: green;
+            a{
+                color: green;
+                text-decoration: none;
+            }
         }
     }
     .navbutton{
@@ -61,4 +68,8 @@ aside{
 
 #closeBtn{
     display: none;
+    cursor: pointer;
+}
+#closeBtn, #menuBtn{
+    cursor: pointer;
 }

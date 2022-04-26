@@ -17,7 +17,7 @@ header {
 }
 
 @media screen and (max-width: 800px) {
-  header .navBtn {
+  header #myDiv {
     display: none;
   }
 }
@@ -34,13 +34,23 @@ header ul {
 @media screen and (max-width: 800px) {
   header ul {
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
   }
 }
 
-header ul a {
+header ul li {
   margin-right: 12px;
-  text-decoration: none;
+}
+
+header ul li a {
   color: green;
+  text-decoration: none;
 }
 
 header .navbutton {
@@ -94,6 +104,11 @@ aside ul {
 
 #closeBtn {
   display: none;
+  cursor: pointer;
+}
+
+#closeBtn, #menuBtn {
+  cursor: pointer;
 }
 
 * {
