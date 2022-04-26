@@ -69,4 +69,5 @@ document.getElementById('icon').onclick = function(){
 //         form.classList.add('was-validated')
 //       }, false)
 //     })
-// })()
+  // })(
+}

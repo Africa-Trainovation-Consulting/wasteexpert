@@ -283,7 +283,7 @@ body .ForgotPasswordContainer input:focus {
 }
 
 body .ForgotPasswordContainer button {
-  margin-top: 250px;
+  margin-top: 50px;
 }
 
 body .ResetContainer button {
@@ -1160,6 +1160,10 @@ body .SectionOne .row .col-lg-6:first-child a:nth-child(2) button {
     height: 47px;
     font-size: 15px;
   }
+}
+
+body .SectionOne .row .col-lg-6:first-child a:nth-child(2) button:hover {
+  background-color: #FF0000;
 }
 
 body .SectionOne .row .col-lg-6:nth-child(2) img {

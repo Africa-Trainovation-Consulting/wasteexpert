@@ -1,8 +1,11 @@
-@import "../variables";
-@import "../classes";
+@import "./classes";
+@import "./variables1";
 
 .head {
     box-shadow: $shadow;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     .navlinks {
         width: 100%;
         display: flex;
@@ -50,6 +53,7 @@
             span {
                 color: $primarycolor;
                 font-size: 22px;
+                
                 padding-left: 1vw;
                 @media screen and (max-width: 992px) {
                     display: none;
@@ -186,6 +190,7 @@
         border: 1px solid $secondarycolor;
         box-shadow: 0px 4px 4px $secondarycolor;
     }
+    
     .imgboy {
         padding-top: 70px;
         width: 800px;
@@ -248,9 +253,16 @@
             border: 1px solid $secondarycolor;
             box-shadow: 0px 4px 4px $secondarycolor;
             margin-bottom: 3vh;
+            &:hover{
+            background-color: #FF0000;
+                
+            }
+        }
+        // .btn2:hover {
+            // background-color: #FF0000;
         }
     }
-}
+
 
 .section2 {
     background-color: $color1;
@@ -514,7 +526,7 @@
             width: 350px;
             padding: 20px;
         }
-        .prtypecont{
+        .prtypecont {
             margin-top: 10px !important;
         }
     }
@@ -550,8 +562,9 @@
         height: 560px;
         display: grid;
         img {
-            padding: 10px;
+         padding: 10px;
             justify-content: center;
+    
         }
     }
     button {
@@ -577,10 +590,14 @@
         }
         .cont {
             margin-bottom: 20px;
-            width: 300px;
+            //width: 300px;
             img {
                 // // padding: 10px;
                 justify-content: center;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
             }
         }
         button {
@@ -687,10 +704,10 @@
 footer {
     background-color: $primarycolor;
     min-height: 600px;
-    .desktopFoot{
-        form{
+    .desktopFoot {
+        form {
             position: relative;
-            span{
+            span {
                 position: absolute;
                 transform: translateX(-100px);
             }
@@ -698,9 +715,9 @@ footer {
     }
     .Mobilefooter {
         display: none;
-        form{
+        form {
             position: relative;
-            span{
+            span {
                 position: absolute;
                 transform: translateX(-69px);
             }
@@ -717,7 +734,7 @@ footer {
     .logo {
         margin-top: 50px;
     }
-    .formFF{
+    .formFF {
         padding-left: 115px;
         margin-top: 4vh;
     }
@@ -802,9 +819,8 @@ footer {
             border: none;
             margin-bottom: 20px;
         }
-        
+
         button {
-            
             color: white;
             font-size: 12px;
             padding: 5px;

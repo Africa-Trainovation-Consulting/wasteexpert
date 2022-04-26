@@ -247,7 +247,7 @@ body {
       box-shadow: none;
     }
     button {
-      margin-top: 250px;
+      margin-top: 50px;
     }
   }
 
@@ -898,6 +898,9 @@ body {
               height: 47px;
               font-size: 15px;
             }
+          }
+          button:hover{
+            background-color: #FF0000;
           }
         }
       }
