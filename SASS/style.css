@@ -39,6 +39,10 @@
 .head {
   -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .head .navlinks {
@@ -720,12 +724,17 @@
   }
   .section6 .cont {
     margin-bottom: 20px;
-    width: 300px;
   }
   .section6 .cont img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
   .section6 button {
     background-color: #ffffff;
