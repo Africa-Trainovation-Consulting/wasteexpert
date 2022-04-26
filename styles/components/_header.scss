@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,47 +7,44 @@ header{
     top: 0;
     background-color: #fff;
     margin: 0 !important;
-    #myDiv{
+
+    #myDiv {
         @media screen and (max-width: 800px) {
             display: none;
         }
     }
-    ul{
+
+    #navOption {
         display: flex;
         align-items: center;
+
         @media screen and (max-width: 800px) {
             display: none;
             flex-direction: column;
-            text-align: center;
-            width: 100%;
-            // margin-top: 74px;
             background-color: #fff;
+            position: absolute;
+            line-height: 2;
+            bottom: -220%;
+            width: 300px;
         }
-        li{
+
+        a {
             margin-right: 12px;
-            a{
-                color: green;
-                text-decoration: none;
-            }
+            text-decoration: none;
+            color: green;
         }
     }
-    .navbutton{
+
+    .navbutton {
         @media screen and (max-width: 800px) {
             display: block;
         }
+
         display: none;
-    }
-    .search{
-        @media screen and (min-width: 800px) {
-            display: none !important;
-        }
-        @media screen and (max-width: 425px) {
-            display: none !important;
-        }
     }
 }
 
-aside{
+aside {
     background-color: #028C32;
     float: left;
     position: absolute;
@@ -57,7 +54,8 @@ aside{
     width: 5vw;
     height: 100vh;
     display: none;
-     ul{
+
+    ul {
         margin-top: 2em;
         display: flex;
         flex-direction: column;
@@ -66,10 +64,21 @@ aside{
     }
 }
 
-#closeBtn{
+#closeBtn {
     display: none;
     cursor: pointer;
 }
-#closeBtn, #menuBtn{
+
+#closeBtn,
+#menuBtn {
     cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.nop {
+    margin-right: -35px;
+    margin-left: 10px;
 }

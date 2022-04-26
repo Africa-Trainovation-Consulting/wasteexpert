@@ -3,6 +3,7 @@ const menuBtn = document.querySelector("#menuBtn");
 const closeBtn = document.querySelector("#closeBtn");
 const navButton = document.querySelector(".navbutton");
 const navOption = document.querySelector('#navOption');
+const closeButton = document.querySelector('#closeButton');
 
  menuBtn.addEventListener("click", ()=>{
      sideMenu.style.display = "block";
@@ -17,6 +18,13 @@ const navOption = document.querySelector('#navOption');
  })
 
 navButton.addEventListener("click", ()=>{
-    navOption.style.display = "block";
-    // navButton.style.display = "none";
+    navOption.style.display = "flex";
+    closeButton.style.display = 'block';
+    navButton.style.display = 'none';
+})
+
+closeButton.addEventListener("click", ()=>{
+    navOption.style.display = "none";
+    closeButton.style.display = 'none';
+    navButton.style.display = 'block';
 })

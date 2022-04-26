@@ -22,7 +22,7 @@ header {
   }
 }
 
-header ul {
+header #navOption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,25 +32,24 @@ header ul {
 }
 
 @media screen and (max-width: 800px) {
-  header ul {
+  header #navOption {
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
-    width: 100%;
     background-color: #fff;
+    position: absolute;
+    line-height: 2;
+    bottom: -220%;
+    width: 300px;
   }
 }
 
-header ul li {
+header #navOption a {
   margin-right: 12px;
-}
-
-header ul li a {
-  color: green;
   text-decoration: none;
+  color: green;
 }
 
 header .navbutton {
@@ -60,18 +59,6 @@ header .navbutton {
 @media screen and (max-width: 800px) {
   header .navbutton {
     display: block;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  header .search {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  header .search {
-    display: none !important;
   }
 }
 
@@ -107,8 +94,18 @@ aside ul {
   cursor: pointer;
 }
 
-#closeBtn, #menuBtn {
+#closeBtn,
+#menuBtn {
   cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.nop {
+  margin-right: -35px;
+  margin-left: 10px;
 }
 
 * {
