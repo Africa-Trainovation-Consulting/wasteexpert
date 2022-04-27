@@ -237,7 +237,7 @@
   }
 }
 
-.btnn {
+.section11 .btnn {
   background-color: #028c32;
   color: #eeeeee;
   width: 200px;
@@ -250,7 +250,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .btnn {
+  .section11 .btnn {
     background-color: #028c32;
     color: #eeeeee;
     width: 150px;
@@ -269,11 +269,27 @@
   }
 }
 
-.btnn .section1 {
+.section1 {
   border-bottom: 40px solid #028c32;
 }
 
-.btnn .section1 button .btn1 {
+.section1 h1 {
+  color: #028c32;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  width: 500px;
+}
+
+.section1 p {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  width: 410px;
+  text-align: justify;
+}
+
+.section1 .btn1 {
   background-color: #028c32;
   color: #eeeeee;
   width: 200px;
@@ -285,7 +301,7 @@
   margin-right: 3vw;
 }
 
-.btnn .section1 .btn2 {
+.section1 .btn2 {
   background-color: black;
   color: #eeeeee;
   width: 200px;
@@ -297,20 +313,20 @@
 }
 
 @media screen and (max-width: 768px) {
-  .btnn .section1 {
+  .section1 {
     border-bottom: none;
     padding-bottom: 40px;
   }
-  .btnn .section1 .row {
+  .section1 .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .btnn .section1 .myimg {
+  .section1 .myimg {
     border-bottom: 30px solid #028c32;
   }
-  .btnn .section1 h1 {
+  .section1 h1 {
     color: #028c32;
     font-family: "Inter", sans-serif;
     font-weight: 700;
@@ -318,7 +334,7 @@
     width: 300px;
     text-align: center;
   }
-  .btnn .section1 p {
+  .section1 p {
     color: rgba(0, 0, 0, 0.4);
     font-family: "Mulish", sans-serif;
     line-height: 1.5;
@@ -326,7 +342,7 @@
     text-align: center;
     padding-bottom: 20px;
   }
-  .btnn .section1 .btn1 {
+  .section1 .btn1 {
     background-color: #028c32;
     color: #eeeeee;
     width: 120px;
@@ -339,7 +355,7 @@
     margin-right: 3vw;
     margin-left: 3vw;
   }
-  .btnn .section1 .btn2 {
+  .section1 .btn2 {
     background-color: black;
     color: #eeeeee;
     width: 120px;
