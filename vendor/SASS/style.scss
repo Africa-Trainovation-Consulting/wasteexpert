@@ -53,7 +53,7 @@
             span {
                 color: $primarycolor;
                 font-size: 22px;
-                
+
                 padding-left: 1vw;
                 @media screen and (max-width: 992px) {
                     display: none;
@@ -108,46 +108,21 @@
     }
 }
 
-.section1 {
-    overflow: hidden;
+.section11 {
     border-bottom: 40px solid $primarycolor;
-    .btnn {
-        background-color: $primarycolor;
-        color: $color1;
-        width: 200px;
-        height: 55px;
-        border-radius: 6px;
-        border: 1px solid $primarycolor;
-        box-shadow: 0px 4px 4px $primarycolor;
-        margin-right: 3vw;
-        @media screen and (max-width: 992px) {
-            background-color: $primarycolor;
-            color: $color1;
-            width: 150px;
-            height: 40px;
-            font-size: 12px;
-            border-radius: 6px;
-            border: 1px solid $primarycolor;
-            box-shadow: 0px 4px 4px $primarycolor;
-            margin-right: 3vw;
-            margin-left: 3vw;
-            margin-bottom: 3vw;
-            align-items: center;
-        }
-    }
 
     .collectorw {
         color: $primarycolor;
         font-family: $font2;
         font-weight: 700;
-        font-size: 60px;
+        font-size: 50px;
         width: 400px;
         padding-bottom: 20px;
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 678px) {
             color: $primarycolor;
-            font-family: $font2;
+            // font-family: $font2;
             font-weight: 700;
-            font-size: 36px;
+            font-size: 30px;
             width: 300px;
             padding-top: 30px;
             padding-bottom: 20px;
@@ -158,9 +133,9 @@
         color: $primarycolor;
         font-family: $font2;
         font-weight: 700;
-        font-size: 60px;
+        font-size: 50px;
         width: 500px;
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
     }
 
     p {
@@ -170,99 +145,133 @@
         width: 410px;
         text-align: justify;
         padding-bottom: 20px;
+        @media screen and (max-width: 678px) {
+            width: 300px;
+            text-align: justify;
+            justify-content: center;
+        }
     }
-    .btn1 {
+}
+.btnn {
+    background-color: $primarycolor;
+    color: $color1;
+    width: 200px;
+    height: 55px;
+    border-radius: 6px;
+    border: 1px solid $primarycolor;
+    box-shadow: 0px 4px 4px $primarycolor;
+    margin-right: 3vw;
+    @media screen and (max-width: 992px) {
         background-color: $primarycolor;
         color: $color1;
-        width: 200px;
-        height: 55px;
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
         border-radius: 6px;
         border: 1px solid $primarycolor;
         box-shadow: 0px 4px 4px $primarycolor;
         margin-right: 3vw;
-    }
-    .btn2 {
-        background-color: $secondarycolor;
-        color: $color1;
-        width: 200px;
-        height: 55px;
-        border-radius: 6px;
-        border: 1px solid $secondarycolor;
-        box-shadow: 0px 4px 4px $secondarycolor;
-    }
-    
-    .imgboy {
-        padding-top: 70px;
-        width: 800px;
-        transform: translateX(-20%);
+        margin-left: 3vw;
+        margin-bottom: 3vw;
+        align-items: center;
     }
 
-    @media screen and (max-width: 992px) {
-        border-bottom: none;
-        padding-bottom: 40px;
 
-        .row {
-            overflow: hidden;
-            flex-direction: column-reverse;
-        }
-        .imgboy {
-            padding-top: 50px;
-            padding-left: 50px;
-            width: 350px;
-        }
-        .myimg {
-            border-bottom: 30px solid $primarycolor;
-        }
-        h1 {
-            color: $primarycolor;
-            font-family: $font2;
-            font-weight: 700;
-            font-size: 36px;
-            width: 300px;
-            padding-top: 30px;
-            padding-bottom: 20px;
-            text-align: center;
-        }
-        p {
-            color: $color3;
-            font-family: $font1;
-            line-height: 1.5;
-            width: 290px;
-            text-align: center;
-            padding-bottom: 20px;
-        }
-        .btn1 {
+    .section1 {        
+        // overflow: hidden;
+        border-bottom: 40px solid $primarycolor;
+        button .btn1 {
             background-color: $primarycolor;
+            // background: #ff0000;
             color: $color1;
-            width: 120px;
-            height: 40px;
-            font-size: 12px;
+            width: 200px;
+            height: 55px;
             border-radius: 6px;
             border: 1px solid $primarycolor;
             box-shadow: 0px 4px 4px $primarycolor;
             margin-right: 3vw;
-            margin-left: 3vw;
         }
         .btn2 {
             background-color: $secondarycolor;
             color: $color1;
-            width: 120px;
-            height: 40px;
-            font-size: 12px;
+            width: 200px;
+            height: 55px;
             border-radius: 6px;
             border: 1px solid $secondarycolor;
             box-shadow: 0px 4px 4px $secondarycolor;
-            margin-bottom: 3vh;
-            &:hover{
-            background-color: #FF0000;
-                
-            }
         }
-        // .btn2:hover {
+
+        // .imgboy {
+        // padding-top: 70px;
+        // width: 800px;
+        // transform: translateX(-20%);
+        // }
+
+        @media screen and (max-width: 768px) {
+            border-bottom: none;
+            padding-bottom: 40px;
+
+            .row {
+                // overflow: hidden;
+                flex-direction: column-reverse;
+            }
+            // .imgboy {
+            //     padding-top: 50px;
+            //     padding-left: 50px;
+            //     width: 350px;
+            // }
+            .myimg {
+                border-bottom: 30px solid $primarycolor;
+            }
+            h1 {
+                color: $primarycolor;
+                font-family: $font2;
+                font-weight: 700;
+                font-size: 36px;
+                width: 300px;
+                // padding-top: 30px;
+                // padding-bottom: 20px;
+                text-align: center;
+            }
+            p {
+                color: $color3;
+                font-family: $font1;
+                line-height: 1.5;
+                width: 290px;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            .btn1 {
+                background-color: $primarycolor;
+                color: $color1;
+                width: 120px;
+                height: 40px;
+                font-size: 12px;
+                border-radius: 6px;
+                border: 1px solid $primarycolor;
+                box-shadow: 0px 4px 4px $primarycolor;
+                margin-right: 3vw;
+                margin-left: 3vw;
+            }
+            .btn2 {
+                background-color: $secondarycolor;
+                color: $color1;
+                width: 120px;
+                height: 40px;
+                font-size: 12px;
+                border-radius: 6px;
+                border: 1px solid $secondarycolor;
+                box-shadow: 0px 4px 4px $secondarycolor;
+                margin-bottom: 3vh;
+                // &:hover {
+                //     background-color: #ff0000;
+                // }
+            }
+            // .btn2:hover {
             // background-color: #FF0000;
         }
     }
-
+}
 
 .section2 {
     background-color: $color1;
@@ -430,7 +439,7 @@
             background-color: $color1;
             border-radius: 6px;
             padding: 30px 30px;
-            margin-top: -200px !important;
+            // margin-top: -200px !important;
             margin-bottom: 50px;
         }
 
@@ -562,9 +571,8 @@
         height: 560px;
         display: grid;
         img {
-         padding: 10px;
+            padding: 10px;
             justify-content: center;
-    
         }
     }
     button {
