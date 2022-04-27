@@ -266,6 +266,7 @@
                 box-shadow: 0px 4px 4px $primarycolor;
                 margin-right: 3vw;
                 margin-left: 3vw;
+                margin-bottom: 2vh;
             }
             .btn2 {
                 background-color: $secondarycolor;
@@ -284,6 +285,9 @@
             // .btn2:hover {
             // background-color: #FF0000;
         }
+        .fa-circle-play:before, .fa-play-circle:before {
+            margin-right: 10px;
+         }
     }
 
 .section2 {
@@ -446,14 +450,14 @@
             text-align: justify;
         }
         .line {
-            display: none;
+            visibility: hidden;
         }
         .div2 {
             background-color: $color1;
             border-radius: 6px;
             padding: 30px 30px;
             // margin-top: -200px !important;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
 
         .btn1 {
