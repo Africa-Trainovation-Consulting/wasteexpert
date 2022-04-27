@@ -1,1 +1,3 @@
 # wastexpert
+Wastexpert is a waste recycling and social benefit venture borne out of sheer passion and vision to transform our environment into a zero landfill  and zero waste nation. We operates an incentive-based scheme which collects recyclable materials from enerprie and households by giving them a chance to generate value from their waste and provide a reliable supply of raw material to the local recycling industry. And in turn rewards them with “Points” which they can accumulate overtime and cash out or use to redeem/shop for household items offered through our Wastexpert- store.
+...You can check it out here...
