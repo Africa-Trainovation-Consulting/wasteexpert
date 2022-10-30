@@ -23,17 +23,17 @@
 <body>
     <!----------- LOGIN FORM ------------------>
     <div class="LoginContainer container">
-        <form action="" class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 needs-validation" id="loginForm" novalidate>
             <h2>Log in</h2>
             <div class="col-md-12">
-                <label for="validationCustom07" class="form-label">Email address</label>
-                <input type="text" class="form-control" id="validationCustom07" placeholder="Your email address here"
+                <label for="loginEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="loginEmail" placeholder="Your email address here"
                     required />
                 <div class="invalid-feedback">Email is required</div>
             </div>
             <div class="col-md-12 misc">
-                <label for="validationCustom08" class="form-label">Password</label>
-                <input type="password" class="form-control" id="validationCustom08"
+                <label for="loginPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="loginPassword"
                     placeholder="   &#x1F7E2;   &#x1F7E2; &#x1F7E2;   &#x1F7E2;   &#x1F7E2;   &#x1F7E2;  &#x1F7E2;"
                     required />
                 <div class="invalid-feedback">A valid password is required</div>
@@ -88,7 +88,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-        <script src="/main.js"></script>
+            <script src="/login.js"></script>
 </body>
 
 </html>
