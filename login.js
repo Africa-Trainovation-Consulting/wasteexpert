@@ -10,7 +10,10 @@ const handleSubmit = (e) => {
   fetch("https://waste-expert-auth.herokuapp.com/api/v1/auth/login", {
     method: "POST",
     body: payload,
-  });
+  })
+    .then((res) => res.json)
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
 };
 
 form.addEventListener("submit", handleSubmit);
