@@ -3,7 +3,9 @@ const form = document.getElementById("loginForm");
 const handleSubmit = (e) => {
   e.preventDefault();
 
-  const payload = new FormData(form);
+  const prePayload = new FormData(form);
+
+  const payload = new URLSearchParams(prePayload);
 
   console.log([...payload]);
 
