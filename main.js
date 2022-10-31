@@ -98,6 +98,7 @@ const handleSubmit = async (e) => {
     subscribeEmail.style.border = "1px solid red";
   } else {
     subscribeEmail.style.border = "1px solid white";
+    subscribeEmail.value = "";
   }
 };
 
