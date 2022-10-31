@@ -1,8 +1,9 @@
 const form = document.getElementById("loginForm");
 
+let error = [];
+
 const handleSubmit = (e) => {
   e.preventDefault();
-  let error = [];
 
   let Url = "https://waste-expert-auth.herokuapp.com";
 
@@ -11,8 +12,6 @@ const handleSubmit = (e) => {
   const payload = new URLSearchParams(prePayload);
 
   console.log([...payload]);
-
-  loginError.innerHTML = error;
 
   fetch(`${Url}/api/v1/auth/login`, {
     method: "POST",
