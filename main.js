@@ -104,8 +104,6 @@ const handleSubmit = async (e) => {
 
 subscribeForm.addEventListener("submit", handleSubmit);
 
-
-
 const desktopFormSubmit = document.getElementById("desktopFormSubmit");
 
 const desktopHandlesubmit = async (e) => {
@@ -132,7 +130,7 @@ const desktopHandlesubmit = async (e) => {
   const data = await response.json();
 
   console.log(data);
-  
+
   if (data.message === "All fields required") {
     desktopEmail.style.border = "1px solid red";
   } else {
