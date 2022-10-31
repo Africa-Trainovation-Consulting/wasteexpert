@@ -10,6 +10,8 @@ const checkValidity = () => {
   ];
 
   if (fullName.value === "") {
+    document.querySelector(".invalidfullName").innerHTML =
+      "FullName field is required";
     fullName.style.border = "1px solid red";
   } else {
     fullName.style.border = "1px solid green";
@@ -18,6 +20,8 @@ const checkValidity = () => {
   }
   if (email.value === "") {
     email.style.border = "1px solid red";
+    document.querySelector(".invalidEmail").innerHTML =
+      "Email field is required";
   } else if (!pattern.test(email.value)) {
     email.style.border = "1px solid red";
     document.querySelector(".invalidEmail").innerHTML = "invalid email";
@@ -54,7 +58,6 @@ const handleSubmit = (e) => {
 
   checkValidation();
 
-  
   //   let Url = "https://waste-expert-auth.herokuapp.com";
 
   //   const prePayload = new FormData(form);
