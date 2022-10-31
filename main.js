@@ -104,30 +104,41 @@ const handleSubmit = async (e) => {
 
 subscribeForm.addEventListener("submit", handleSubmit);
 
-// const handleSubmited = async (e) => {
-//   e.preventDefault();
 
-//   if (desktopEmail === "") {
-//     desktopEmail.style.border = "1px solid red";
-//   } else {
-//     desktopEmail.style.border = "1px solid green";
-//   }
 
-//   let Url = "https://waste-expert-auth.herokuapp.com";
+const desktopFormSubmit = document.getElementById("desktopFormSubmit");
 
-//   const prePayload = new FormData(desktopEmail);
+const desktopHandlesubmit = async (e) => {
+  e.preventDefault();
 
-//   const payload = new URLSearchParams(prePayload);
+  if (desktopEmail === "") {
+    desktopEmail.style.border = "1px solid red";
+  } else {
+    desktopEmail.style.border = "1px solid green";
+  }
 
-//   console.log([...payload]);
+  let Url = "https://waste-expert-auth.herokuapp.com";
 
-//   const response = await fetch(`${Url}/api/v1/auth/subscribe`, {
-//     method: "POST",
-//     body: payload,
-//   });
-//   const data = await response.json();
+  const prePayload = new FormData(desktopFormSubmit);
 
-//   console.log(data);
-// };
+  const payload = new URLSearchParams(prePayload);
 
-// desktopEmail.addEventListener("submit", handleSubmited);
+  console.log([...payload]);
+
+  const response = await fetch(`${Url}/api/v1/auth/subscribe`, {
+    method: "POST",
+    body: payload,
+  });
+  const data = await response.json();
+
+  console.log(data);
+  
+  if (data.message === "All fields required") {
+    desktopEmail.style.border = "1px solid red";
+  } else {
+    desktopEmail.style.border = "1px solid white";
+    desktopEmail.value = "";
+  }
+};
+
+desktopFormSubmit.addEventListener("submit", desktopHandlesubmit);
