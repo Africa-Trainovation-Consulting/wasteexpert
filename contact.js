@@ -50,13 +50,12 @@ const checkValidity = () => {
 };
 
 function checkValidation() {
-  let homePage = "/pages/contact.html";
+  let homePage = "/index.html";
 
-  //   checkValidity() ? window.location.assign(homePage) : " ";
-  checkValidity();
+  checkValidity() ? window.location.assign(homePage) : " ";
 }
 
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
 
   checkValidation();
@@ -69,13 +68,13 @@ const handleSubmit = (e) => {
 
   console.log([...payload]);
 
-  fetch(`${Url}/api/v1/auth/inquire`, {
+  const response = await fetch(`${Url}/api/v1/auth/inquire`, {
     method: "POST",
     body: payload,
-  })
-    .then((res) => res.json)
-    .then((data) => console.log(data))
-    .catch((err) => console.log(err));
+  });
+  const data = await response.json();
+
+  console.log(data.message);
 };
 
 form.addEventListener("submit", handleSubmit);
