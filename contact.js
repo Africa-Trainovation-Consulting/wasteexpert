@@ -60,6 +60,13 @@ const checkValidity = () => {
     document.querySelector(".invalidvalidMsg").innerHTML = "";
     validMsg = true;
   }
+  return validName && validEmail && validSubject && validMsg;
 };
+
+function checkValidation() {
+  let homePage = "/indexs/homepage/home.html";
+
+  checkValidity() ? window.location.assign(homePage) : " ";
+}
 
 form.addEventListener("submit", handleSubmit);
