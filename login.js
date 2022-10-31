@@ -19,7 +19,7 @@ const handleSubmit = (e) => {
     .then((data) => console.log(data))
     .catch((err) => {
       console.log(err);
-      loginError.innerHTML = `${err.message}`;
+      loginError.innerHTML = `this is an ${err.message}`;
     });
 };
 
