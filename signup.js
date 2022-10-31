@@ -1,6 +1,4 @@
-const form = document.getElementById("loginForm");
-
-let error = [];
+const form = document.getElementById("signupForm");
 
 const handleSubmit = (e) => {
   e.preventDefault();
@@ -13,13 +11,15 @@ const handleSubmit = (e) => {
 
   console.log([...payload]);
 
-  fetch(`${Url}/api/v1/auth/login`, {
+  fetch(`${Url}/api/v1/auth/register`, {
     method: "POST",
     body: payload,
   })
     .then((res) => res.json)
     .then((data) => console.log(data))
-    .catch((err) => error.push(err));
+    .catch((err) => {
+      console.log(err);
+    });
 };
 
 form.addEventListener("submit", handleSubmit);
