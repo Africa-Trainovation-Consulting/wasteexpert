@@ -17,10 +17,7 @@ const handleSubmit = (e) => {
   })
     .then((res) => res.json)
     .then((data) => console.log(data))
-    .catch((err) => {
-      console.log(err);
-      loginError.innerHTML = `this is an ${err.message}`;
-    });
+    .catch((err) => console.log(err));
 };
 
 form.addEventListener("submit", handleSubmit);

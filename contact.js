@@ -48,9 +48,10 @@ const checkValidity = () => {
 };
 
 function checkValidation() {
-  let homePage = "/indexs/homepage/home.html";
+  let homePage = "/pages/contact.html";
 
-  checkValidity() ? window.location.assign(homePage) : " ";
+  //   checkValidity() ? window.location.assign(homePage) : " ";
+  checkValidity();
 }
 
 const handleSubmit = (e) => {
@@ -58,22 +59,21 @@ const handleSubmit = (e) => {
 
   checkValidation();
 
-  //   let Url = "https://waste-expert-auth.herokuapp.com";
+  let Url = "https://waste-expert-auth.herokuapp.com";
 
-  //   const prePayload = new FormData(form);
+  const prePayload = new FormData(form);
 
-  //   const payload = new URLSearchParams(prePayload);
+  const payload = new URLSearchParams(prePayload);
 
-  //   console.log([...payload]);
-  //   fetch(`${Url}/api/v1/auth/inquire`, {
-  //     method: "POST",
-  //     body: payload,
-  //   })
-  //     .then((res) => res.json)
-  //     .then((data) => {
-  //       console.log(data);
-  //     })
-  //     .catch((err) => console.log(err.message));
+  console.log([...payload]);
+
+  fetch(`${Url}/api/v1/auth/inquire`, {
+    method: "POST",
+    body: payload,
+  })
+    .then((res) => res.json)
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
 };
 
 form.addEventListener("submit", handleSubmit);
