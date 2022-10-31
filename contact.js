@@ -30,9 +30,9 @@ const checkValidity = () => {
   ];
 
   if (fullName.value === "") {
-    email.style.border = "1px solid red";
+    fullName.style.border = "1px solid red";
   } else {
-    email.style.border = "1px solid green";
+    fullName.style.border = "1px solid green";
     document.querySelector(".invalidfullName").innerHTML = "";
     validName = true;
   }
@@ -45,6 +45,20 @@ const checkValidity = () => {
     email.style.border = "1px solid green";
     document.querySelector(".invalidEmail").innerHTML = "";
     validEmail = true;
+  }
+  if (subject.value === "") {
+    subject.style.border = "1px solid red";
+  } else {
+    subject.style.border = "1px solid green";
+    document.querySelector(".invalidvalidSubject").innerHTML = "";
+    validSubject = true;
+  }
+  if (message.value === "") {
+    message.style.border = "1px solid red";
+  } else {
+    message.style.border = "1px solid green";
+    document.querySelector(".invalidvalidMsg").innerHTML = "";
+    validMsg = true;
   }
 };
 
