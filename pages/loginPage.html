@@ -27,14 +27,15 @@
             <h2>Log in</h2>
             <div class="col-md-12">
                 <label for="loginEmail" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="loginEmail" placeholder="Your email address here"
+                <input type="email" name="email" class="form-control" id="loginEmail" placeholder="Your email address here"
                     required />
                 <div class="invalid-feedback">Email is required</div>
             </div>
             <div class="col-md-12 misc">
                 <label for="loginPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="loginPassword"
+                <input type="password" name="password" class="form-control" id="loginPassword"
                     placeholder="   &#x1F7E2;   &#x1F7E2; &#x1F7E2;   &#x1F7E2;   &#x1F7E2;   &#x1F7E2;  &#x1F7E2;"
+                    autocomplete="off"
                     required />
                 <div class="invalid-feedback">A valid password is required</div>
             </div>
