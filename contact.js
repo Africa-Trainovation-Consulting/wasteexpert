@@ -11,7 +11,8 @@ const checkValidity = () => {
 
   if (fullName.value === "") {
     document.querySelector(".invalidfullName").innerHTML =
-      "FullName field is required";
+      "Fullname field is required";
+    document.querySelector(".invalidfullName").style.color = "red";
     fullName.style.border = "1px solid red";
   } else {
     fullName.style.border = "1px solid green";
@@ -22,6 +23,7 @@ const checkValidity = () => {
     email.style.border = "1px solid red";
     document.querySelector(".invalidEmail").innerHTML =
       "Email field is required";
+    document.querySelector(".invalidEmail").style.color = "red";
   } else if (!pattern.test(email.value)) {
     email.style.border = "1px solid red";
     document.querySelector(".invalidEmail").innerHTML = "invalid email";
